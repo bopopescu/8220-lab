@@ -1,0 +1,125 @@
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+#include <linux/kernel_stat.h>
+#include <linux/fs.h>
+#include <linux/cdev.h>
+#include <linux/pci.h>
+#include <linux/msi.h>
+#include <linux/mm.h>
+#include <linux/miscdevice.h>  
+#include <linux/delay.h>  
+#include <linux/kernel.h>  
+#include <linux/module.h>  
+#include <linux/init.h>  
+#include <linux/mm.h>  
+#include <linux/fs.h>  
+#include <linux/types.h>  
+#include <linux/delay.h>  
+#include <linux/moduleparam.h>  
+#include <linux/slab.h>  
+#include <linux/errno.h>  
+#include <linux/ioctl.h>  
+#include <linux/cdev.h>  
+#include <linux/string.h>  
+#include <linux/list.h>  
+#include <linux/pci.h>  
+#include <linux/gpio.h> 
+
+MODULE_LICENSE("Proprietary");
+MODULE_AUTHOR("Yitian Li");
+
+int fd=0;
+struct cdev kyouko3_cdev;
+struct kyouko3_data{
+	unsigned int p_control_base;
+	unsigned int p_card_ram_base;
+	struct pci_dev * pdev;
+	unsigned int k_control_base;
+	unsigned int k_card_ram_base;
+} kyouko3;
+
+
+
+struct pci_device_id kyouko3_dev_ids[]=
+{
+	{PCI_DEVICE(0x1234,0x1113)},
+	{0}
+};
+
+int kyouko3_probe(struct pci_dev * pci_dev, const struct pci_device_id * pci_id){
+	kyouko3.p_control_base=pci_resource_start(pci_dev,1);
+	kyouko3.p_card_ram_base=pci_resource_start(pci_dev,2);
+	kyouko3.pdev=pci_dev->irq;
+	pci_enable_device(pci_dev);
+	pci_set_master(pci_dev);
+};
+
+int kyouko3_remove(struct pci_dev * pci_dev){
+	pci_disable_device(pci_dev);
+}
+
+unsigned int K_READ_REG(unsigned int reg)
+{
+        unsigned int value;
+        //delay();
+        //rmb();
+        value = (*((unsigned int *)kyouko3.k_control_base+(reg>>2) ));
+        return (value);
+}
+
+
+struct pci_driver kyouko3_pci_drv=
+{
+        .name="Kyouko3",
+        .id_table=kyouko3_dev_ids,
+        .probe=kyouko3_probe,
+        .remove=kyouko3_remove
+};
+
+int kyouko3_open(struct inode *inode, struct file *fp){
+
+	kyouko3.k_control_base=ioremap(kyouko3.p_control_base,65536);
+	unsigned int size = K_READ_REG(0x0020);
+	kyouko3.k_card_ram_base=ioremap(kyouko3.p_card_ram_base,size);
+	printk(KERN_ALERT "Opened Kyouko3...");
+	return 0;
+}
+
+int kyouko3_release(struct inode *inode, struct file *fp){
+
+	iounmap(kyouko3.k_control_base);
+	iounmap(kyouko3.k_card_ram_base);
+	printk(KERN_ALERT "BUUH BYE...");
+	return 0;
+}
+int kyouko3_mmap(struct file *flip, struct vm_area_struct * vma){
+	int ret;
+	ret = io_remap_pfn_range(vma, vma->vm_start, vma->vm_pgoff, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
+	return ret;
+}
+
+struct file_operations kyouko3_fops = {
+	.open= 		kyouko3_open,
+	.release=	kyouko3_release,
+	.mmap=		kyouko3_mmap,
+	.owner=		THIS_MODULE
+};
+
+int my_init_function(void)
+{
+	cdev_init(&kyouko3_cdev, &kyouko3_fops);
+	cdev_add(&kyouko3_cdev, MKDEV(500,127),1);
+	pci_register_driver(&kyouko3_pci_drv);
+	printk(KERN_ALERT "Initializing...");
+	return 0;
+}
+void my_exit_function(void)
+{	
+	cdev_del(&kyouko3_cdev);
+	pci_unregister_driver(&kyouko3_pci_drv);
+	printk(KERN_ALERT "Exiting...");
+}
+
+module_init(my_init_function);
+module_exit(my_exit_function);
