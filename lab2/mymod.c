@@ -32,11 +32,12 @@ MODULE_AUTHOR("Yitian Li");
 int fd=0;
 struct cdev kyouko3_cdev;
 struct kyouko3_data{
-	unsigned int p_control_base;
-	unsigned int p_card_ram_base;
+	unsigned int * p_control_base;
+	unsigned int * p_card_ram_base;
 	struct pci_dev * pdev;
-	unsigned int k_control_base;
-	unsigned int k_card_ram_base;
+	unsigned int * k_control_base;
+	unsigned int * k_card_ram_base;
+	void __iomem * ioaddr;
 } kyouko3;
 
 
@@ -64,7 +65,7 @@ unsigned int K_READ_REG(unsigned int reg)
         unsigned int value;
         //delay();
         //rmb();
-        value = (*((unsigned int *)kyouko3.k_control_base+(reg>>2) ));
+        value = *(kyouko3.k_control_base+(reg>>2));
         return (value);
 }
 
@@ -95,7 +96,7 @@ int kyouko3_release(struct inode *inode, struct file *fp){
 }
 int kyouko3_mmap(struct file *flip, struct vm_area_struct * vma){
 	int ret;
-	ret = io_remap_pfn_range(vma, vma->vm_start, vma->vm_pgoff, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
+	ret = remap_pfn_range(vma, vma->vm_start,(unsigned int )(kyouko3.p_control_base)>>PAGE_SHIFT, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
 	return ret;
 }
 

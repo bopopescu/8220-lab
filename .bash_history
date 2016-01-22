@@ -59,3 +59,6 @@ cd lab2
 vim test.c
 cd lab2
 vim mymod.c 
+vnc 
+vnc titan3.cs.clemson.edu
+exit
