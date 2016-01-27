@@ -1,0 +1,6 @@
+2016-01-26 11:33:01,481 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2016-01-26 11:33:01,487 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2016-01-26 11:33:01,490 DEBUG    root            Running gcloud.config.set with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.config.set', usage=None, description='Set the value for an option, so that Cloud SDK tools can use them as\nconfiguration.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x2d19450>>, command_path=['gcloud', 'config', 'set'], configuration=None, document=None, format=None, h=None, help=None, http_timeout=None, installation=False, log_http=None, project=None, property='project', quiet=None, scope=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, value='resume-for-me', verbosity=None, version=None).
+2016-01-26 11:33:01,490 WARNING  root            Creating and activating new configuration [default].
+2016-01-26 11:33:01,494 WARNING  root            Importing legacy user properties.
+2016-01-26 11:33:01,499 INFO     root            Display format "default".

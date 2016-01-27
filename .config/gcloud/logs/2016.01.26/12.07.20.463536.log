@@ -1,0 +1,175 @@
+2016-01-26 12:07:20,468 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-01-26 12:07:20,625 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'ssh']
+2016-01-26 12:07:20,676 DEBUG    root            Running gcloud.compute.ssh with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.ssh', usage=None, description='SSH into a virtual machine instance.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x1f51190>>, command=None, command_path=['gcloud', 'compute', 'ssh'], configuration=None, container=None, document=None, dry_run=False, endpoint=None, format=None, h=None, help=None, http_timeout=None, implementation_args=['-R'], log_http=None, plain=False, project=None, quiet=None, ssh_flag=None, ssh_key_file=None, trace_email=None, trace_log=False, trace_token=None, user_host='19999:localhost:22', user_output_enabled=None, verbosity=None, version=None, zone=None).
+2016-01-26 12:07:20,677 DEBUG    root            Starting batch request...
+2016-01-26 12:07:20,678 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.ZonesService object at 0x2841350>, 'List', <ComputeZonesListRequest
+ maxResults: 500
+ project: 'resume-for-me'>)
+2016-01-26 12:07:20,679 DEBUG    root            Making batch request...
+2016-01-26 12:07:20,934 DEBUG    root            Batch request done; responses [<ZoneList
+ id: u'projects/resume-for-me/zones'
+ items: [<Zone
+ creationTimestamp: u'2014-07-15T10:44:08.663-07:00'
+ description: u'asia-east1-c'
+ id: 2222
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'asia-east1-c'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/asia-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/asia-east1-c'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.575-07:00'
+ description: u'asia-east1-a'
+ id: 2220
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'asia-east1-a'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/asia-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/asia-east1-a'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.575-07:00'
+ description: u'asia-east1-b'
+ id: 2221
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'asia-east1-b'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/asia-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/asia-east1-b'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.447-07:00'
+ description: u'europe-west1-b'
+ id: 2101
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'europe-west1-b'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/europe-west1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/europe-west1-b'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-09-02T15:52:35.238-07:00'
+ description: u'europe-west1-c'
+ id: 2103
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'europe-west1-c'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/europe-west1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/europe-west1-c'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-12-15T13:42:35.748-08:00'
+ description: u'europe-west1-d'
+ id: 2104
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'europe-west1-d'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/europe-west1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/europe-west1-d'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.514-07:00'
+ description: u'us-central1-a'
+ id: 2000
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-central1-a'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-central1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-central1-a'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.447-07:00'
+ description: u'us-central1-f'
+ id: 2004
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-central1-f'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-central1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-central1-f'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-10-29T11:20:06.229-07:00'
+ description: u'us-central1-c'
+ id: 2002
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-central1-c'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-central1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-central1-c'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2014-05-30T18:35:16.514-07:00'
+ description: u'us-central1-b'
+ id: 2001
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-central1-b'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-central1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-central1-b'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2015-09-08T16:57:06.746-07:00'
+ description: u'us-east1-b'
+ id: 2231
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-east1-b'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-east1-b'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2015-09-03T15:15:02.330-07:00'
+ description: u'us-east1-d'
+ id: 2234
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-east1-d'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-east1-d'
+ status: StatusValueValuesEnum(UP, 1)>, <Zone
+ creationTimestamp: u'2015-09-08T10:59:59.040-07:00'
+ description: u'us-east1-c'
+ id: 2233
+ kind: u'compute#zone'
+ maintenanceWindows: []
+ name: u'us-east1-c'
+ region: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/regions/us-east1'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones/us-east1-c'
+ status: StatusValueValuesEnum(UP, 1)>]
+ kind: u'compute#zoneList'
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/zones'>]
+2016-01-26 12:07:26,017 DEBUG    root            Starting batch request...
+2016-01-26 12:07:26,018 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.InstancesService object at 0x2838550>, 'Get', <ComputeInstancesGetRequest
+ instance: '19999:localhost:22'
+ project: 'resume-for-me'
+ zone: u'us-east1-c'>)
+2016-01-26 12:07:26,019 DEBUG    root            Making batch request...
+2016-01-26 12:07:26,057 DEBUG    root            Error response: HttpError accessing <https://www.googleapis.com/batch>: response: <{'status': '400', 'Content-Length': '462', 'Expires': 'Tue, 26 Jan 2016 17:09:12 GMT', 'Cache-Control': 'private, max-age=0', 'Date': 'Tue, 26 Jan 2016 17:09:12 GMT', 'Content-Type': 'application/json; charset=UTF-8'}>, content <{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "invalidParameter",
+    "message": "Invalid value '19999:localhost:22'. Values must match the following regular expression: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'",
+    "locationType": "parameter",
+    "location": "instance"
+   }
+  ],
+  "code": 400,
+  "message": "Invalid value '19999:localhost:22'. Values must match the following regular expression: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'"
+ }
+}
+>
+2016-01-26 12:07:26,058 DEBUG    root            Batch request done; responses [None]
+2016-01-26 12:07:26,058 DEBUG    root            (gcloud.compute.ssh) Could not fetch instance:
+ - Invalid value '19999:localhost:22'. Values must match the following regular expression: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'
+ 
+Traceback (most recent call last):
+  File "/root/download/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 643, in Execute
+    result = args.cmd_func(cli=self, args=args)
+  File "/root/download/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 1401, in Run
+    resources = command_instance.Run(args)
+  File "/root/download/google-cloud-sdk/lib/surface/compute/ssh.py", line 125, in Run
+    instance = self.GetInstance(instance_ref)
+  File "/root/download/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/ssh_utils.py", line 565, in GetInstance
+    error_message='Could not fetch instance:')
+  File "/root/download/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 101, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/root/download/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 113, in RaiseException
+    errors))
+ToolException: Could not fetch instance:
+ - Invalid value '19999:localhost:22'. Values must match the following regular expression: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'
+
+2016-01-26 12:07:26,089 ERROR    root            (gcloud.compute.ssh) Could not fetch instance:
+ - Invalid value '19999:localhost:22'. Values must match the following regular expression: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?'
+ 

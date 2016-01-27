@@ -1,0 +1,19 @@
+2016-01-26 11:26:24,949 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2016-01-26 11:26:24,958 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2016-01-26 11:26:24,960 DEBUG    root            Running gcloud.auth.login with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.auth.login', usage=None, description='Obtains access credentials for the Google Cloud Platform resources of the\ngiven account, via a web flow.  If the account already has valid credentials,\nit is set as active without re-running the web flow.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, activate=True, authority_selector=None, authorization_token_file=None, brief=False, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x2093290>>, command_path=['gcloud', 'auth', 'login'], configuration=None, document=None, force=False, format=None, h=None, help=None, http_timeout=None, launch_browser=True, log_http=None, project=None, quiet=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-01-26 11:26:25,103 INFO     ___FILE_ONLY___ Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute&access_type=offline
+
+
+
+2016-01-26 11:32:38,643 INFO     oauth2client.client Successfully retrieved access token
+2016-01-26 11:32:38,645 DEBUG    oauth2client.multistore_file Initializing empty multistore file
+2016-01-26 11:32:38,649 DEBUG    oauth2client.multistore_file Initializing empty multistore file
+2016-01-26 11:32:38,655 INFO     ___FILE_ONLY___ Saved Application Default Credentials.
+
+2016-01-26 11:32:38,657 INFO     ___FILE_ONLY___ 
+You are now logged in as [yitian.li.93@gmail.com].
+Your current project is [None].  You can change this setting by running:
+  $ gcloud config set project PROJECT_ID
+

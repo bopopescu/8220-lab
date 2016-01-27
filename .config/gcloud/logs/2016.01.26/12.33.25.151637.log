@@ -1,0 +1,330 @@
+2016-01-26 12:33:25,156 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2016-01-26 12:33:25,159 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2016-01-26 12:33:25,305 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'add_metadata']
+2016-01-26 12:33:25,342 DEBUG    root            Running gcloud.compute.project-info.add-metadata with Namespace(__calliope_internal_deepest_parser=ArgumentParser(prog='gcloud.compute.project-info.add-metadata', usage=None, description='Add or update project-wide metadata.', version=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=False), account=None, authority_selector=None, authorization_token_file=None, cmd_func=<bound method Command.Run of <googlecloudsdk.calliope.backend.Command object at 0x2cfaa90>>, command_path=['gcloud', 'compute', 'project-info', 'add-metadata'], configuration=None, document=None, endpoint=None, format=None, h=None, help=None, http_timeout=None, log_http=None, metadata={}, metadata_from_file={'sshkeys': '/root/.ssh/root.pub'}, project=None, quiet=None, trace_email=None, trace_log=False, trace_token=None, user_output_enabled=None, verbosity=None, version=None).
+2016-01-26 12:33:25,343 INFO     root            Display format "none".
+2016-01-26 12:33:25,343 DEBUG    root            Starting batch request...
+2016-01-26 12:33:25,343 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.ProjectsService object at 0x351fad0>, 'Get', <ComputeProjectsGetRequest
+ project: 'resume-for-me'>)
+2016-01-26 12:33:25,345 DEBUG    root            Making batch request...
+2016-01-26 12:33:25,577 DEBUG    root            Batch request done; responses [<Project
+ commonInstanceMetadata: <Metadata
+ fingerprint: 'n\t\xff\xf0\xf7\x18\xd3m'
+ items: [<ItemsValueListEntry
+ key: u'google-compute-default-region'
+ value: u'us-east1'>, <ItemsValueListEntry
+ key: u'google-compute-default-zone'
+ value: u'us-east1-c'>, <ItemsValueListEntry
+ key: u'sshKeys'
+ value: u'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHg6ARlGduaM6tVA/tf4T3ppnUNguN9XtDVswhHCOjBdfVv6BfPRcAPE+uS6CoKdHeAQhS/0NtNY6QDRlEBbq/ghhjr8WbWyQSWt0vT48IKCJZ+3cmjtU3wt8VTTPc/8vWIMmpsomPUJYAsW6BShY19E/OdW9pmZDWRO/MbSQWHSCdILL9hFiull2cgzq5zcHr/KZsY4nYAFr9Oy47gM6D/uqKthTC2FjlwFNgmulhLhh0tTfQ5doqZbuKsDWnMB6S2QmNvZmmXLEb+B72xkE4dB9r9iSgWb0wJCTg1/tzGh55QmyA0t0L4LUH5r8bUHqISLZGoyGkIPxOzA9PZIHf root@cpsc822'>, <ItemsValueListEntry
+ key: u'sshkeys'
+ value: u'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCp+Gju+H1bvWlDjC1NQUCj+cS93EwSDnGhq6ddpplzQQMoalAr0Y2DBnzjf/HVD388RBuO5vNaK1vOLRDlY8928jOkAJ97WR1DSeDtstEcaPFkLGAEy9YdAO+4SndTHsLHMc3wHJOJijuFYJfYxQgFTb8Lx0SM1yTPBIpr0C6UUJEfXSQDFOwnMHv3xHWEEPvEzt7S1d/Trfa1SvvzROTg+WUKJeoGIdJOtPjD3QAdCW6PrSAzyVWm6yG5ceWsczzoAXhQ7LG5z0Pu+fQHpU/UYcA14BYrTjjYJEmXKlVnA39hxmDr2HDT1QIZnqBiwIc1EkLmJlrxDS7oF+AVT6gB root@cpsc822\n'>]
+ kind: u'compute#metadata'>
+ creationTimestamp: u'2016-01-25T17:17:26.257-08:00'
+ enabledFeatures: []
+ id: 9276751378370442300L
+ kind: u'compute#project'
+ name: u'resume-for-me'
+ quotas: [<Quota
+ limit: 1000.0
+ metric: MetricValueValuesEnum(SNAPSHOTS, 16)
+ usage: 0.0>, <Quota
+ limit: 5.0
+ metric: MetricValueValuesEnum(NETWORKS, 14)
+ usage: 1.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(FIREWALLS, 4)
+ usage: 4.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(IMAGES, 7)
+ usage: 0.0>, <Quota
+ limit: 7.0
+ metric: MetricValueValuesEnum(STATIC_ADDRESSES, 19)
+ usage: 0.0>, <Quota
+ limit: 200.0
+ metric: MetricValueValuesEnum(ROUTES, 15)
+ usage: 2.0>, <Quota
+ limit: 15.0
+ metric: MetricValueValuesEnum(FORWARDING_RULES, 5)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(TARGET_POOLS, 24)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(HEALTH_CHECKS, 6)
+ usage: 0.0>, <Quota
+ limit: 23.0
+ metric: MetricValueValuesEnum(IN_USE_ADDRESSES, 12)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(TARGET_INSTANCES, 23)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(TARGET_HTTP_PROXIES, 22)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(URL_MAPS, 26)
+ usage: 0.0>, <Quota
+ limit: 3.0
+ metric: MetricValueValuesEnum(BACKEND_SERVICES, 1)
+ usage: 0.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(INSTANCE_TEMPLATES, 11)
+ usage: 0.0>, <Quota
+ limit: 5.0
+ metric: MetricValueValuesEnum(TARGET_VPN_GATEWAYS, 25)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(VPN_TUNNELS, 27)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(TARGET_HTTPS_PROXIES, 21)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(SSL_CERTIFICATES, 18)
+ usage: 0.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(SUBNETWORKS, 20)
+ usage: 0.0>]
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ usageExportLocation: <UsageExportLocation
+ bucketName: u'resume4yitianli'
+ reportNamePrefix: u''>>]
+2016-01-26 12:33:25,581 DEBUG    root            Starting batch request...
+2016-01-26 12:33:25,581 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.ProjectsService object at 0x351fad0>, 'SetCommonInstanceMetadata', <ComputeProjectsSetCommonInstanceMetadataRequest
+ metadata: <Metadata
+ fingerprint: 'n\t\xff\xf0\xf7\x18\xd3m'
+ items: [<ItemsValueListEntry
+ key: u'google-compute-default-region'
+ value: u'us-east1'>, <ItemsValueListEntry
+ key: u'google-compute-default-zone'
+ value: u'us-east1-c'>, <ItemsValueListEntry
+ key: u'sshKeys'
+ value: u'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHg6ARlGduaM6tVA/tf4T3ppnUNguN9XtDVswhHCOjBdfVv6BfPRcAPE+uS6CoKdHeAQhS/0NtNY6QDRlEBbq/ghhjr8WbWyQSWt0vT48IKCJZ+3cmjtU3wt8VTTPc/8vWIMmpsomPUJYAsW6BShY19E/OdW9pmZDWRO/MbSQWHSCdILL9hFiull2cgzq5zcHr/KZsY4nYAFr9Oy47gM6D/uqKthTC2FjlwFNgmulhLhh0tTfQ5doqZbuKsDWnMB6S2QmNvZmmXLEb+B72xkE4dB9r9iSgWb0wJCTg1/tzGh55QmyA0t0L4LUH5r8bUHqISLZGoyGkIPxOzA9PZIHf root@cpsc822'>, <ItemsValueListEntry
+ key: u'sshkeys'
+ value: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBFzPxy5WJWYdpwIEgOamVhtFXkiv2QPNwmZiCN0RjmxSqKgJEz0TFt/QytlTgjZ6akEpQlGQdCGTW2oV01INoxNBbMnX1OnqloUQZgrwIp0E059++xUD17pj7iFB6+YDqTxaGv0kicyrdCPUdeWjypFscajeyp9p3naCfBx9mIz27v+vbXGzDLdJpCnLurWe/ylNOUxizcdnpH24vlEOIqgNY8d2UHvRpuadSnEFQMPrKWUwcwqrQlxWQdK9+4SdDEJwO6rozvsSaAckPHrZezmYciRPbJKkdtF0Y2fz+QUMLRPeJv3lPLwtpj0DyTJmhGvHzEq5CgtgvhKuOz+Mr root@cpsc822\n'>]>
+ project: 'resume-for-me'>)
+2016-01-26 12:33:25,582 DEBUG    root            Making batch request...
+2016-01-26 12:33:26,073 DEBUG    root            Batch request done; responses [<Operation
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:26,073 DEBUG    root            Operations to inspect: [<Operation
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:26,073 DEBUG    root            Starting batch request...
+2016-01-26 12:33:26,073 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x351a5d0>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ project: 'resume-for-me'>)
+2016-01-26 12:33:26,074 DEBUG    root            Making batch request...
+2016-01-26 12:33:26,241 DEBUG    root            Batch request done; responses [<Operation
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:26,241 DEBUG    root            Sleeping for 1s.
+2016-01-26 12:33:27,242 DEBUG    root            Operations to inspect: [<Operation
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:27,243 DEBUG    root            Starting batch request...
+2016-01-26 12:33:27,243 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x351a5d0>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ project: 'resume-for-me'>)
+2016-01-26 12:33:27,244 DEBUG    root            Making batch request...
+2016-01-26 12:33:27,363 DEBUG    root            Batch request done; responses [<Operation
+ endTime: u'2016-01-26T09:35:12.888-08:00'
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:27,363 DEBUG    root            Sleeping for 2s.
+2016-01-26 12:33:29,366 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2016-01-26T09:35:12.888-08:00'
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:29,366 DEBUG    root            Starting batch request...
+2016-01-26 12:33:29,366 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.GlobalOperationsService object at 0x351a5d0>, 'Get', <ComputeGlobalOperationsGetRequest
+ operation: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ project: 'resume-for-me'>)
+2016-01-26 12:33:29,367 DEBUG    root            Making batch request...
+2016-01-26 12:33:29,490 DEBUG    root            Batch request done; responses [<Operation
+ endTime: u'2016-01-26T09:35:15.352-08:00'
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:29,491 DEBUG    root            Sleeping for 3s.
+2016-01-26 12:33:32,494 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2016-01-26T09:35:15.352-08:00'
+ id: 12841070663593337427L
+ insertTime: u'2016-01-26T09:35:12.180-08:00'
+ kind: u'compute#operation'
+ name: u'operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ operationType: u'setMetadata'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me/global/operations/operation-1453829712060-52a401b8d1e61-3b2ed768-f273b68a'
+ startTime: u'2016-01-26T09:35:12.444-08:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9276751378370442300L
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ user: u'yitian.li.93@gmail.com'
+ warnings: []>]
+2016-01-26 12:33:32,495 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/resume-for-me].
+
+2016-01-26 12:33:32,496 DEBUG    root            Starting batch request...
+2016-01-26 12:33:32,496 DEBUG    root            Adding request: (<googlecloudsdk.third_party.apis.compute.v1.compute_v1_client.ProjectsService object at 0x351fad0>, 'Get', <ComputeProjectsGetRequest
+ project: u'resume-for-me'>)
+2016-01-26 12:33:32,497 DEBUG    root            Making batch request...
+2016-01-26 12:33:32,633 DEBUG    root            Batch request done; responses [<Project
+ commonInstanceMetadata: <Metadata
+ fingerprint: 'H\xac\x05\x1b\xb3\xd6;\xc3'
+ items: [<ItemsValueListEntry
+ key: u'google-compute-default-region'
+ value: u'us-east1'>, <ItemsValueListEntry
+ key: u'google-compute-default-zone'
+ value: u'us-east1-c'>, <ItemsValueListEntry
+ key: u'sshKeys'
+ value: u'root:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHg6ARlGduaM6tVA/tf4T3ppnUNguN9XtDVswhHCOjBdfVv6BfPRcAPE+uS6CoKdHeAQhS/0NtNY6QDRlEBbq/ghhjr8WbWyQSWt0vT48IKCJZ+3cmjtU3wt8VTTPc/8vWIMmpsomPUJYAsW6BShY19E/OdW9pmZDWRO/MbSQWHSCdILL9hFiull2cgzq5zcHr/KZsY4nYAFr9Oy47gM6D/uqKthTC2FjlwFNgmulhLhh0tTfQ5doqZbuKsDWnMB6S2QmNvZmmXLEb+B72xkE4dB9r9iSgWb0wJCTg1/tzGh55QmyA0t0L4LUH5r8bUHqISLZGoyGkIPxOzA9PZIHf root@cpsc822'>, <ItemsValueListEntry
+ key: u'sshkeys'
+ value: u'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBFzPxy5WJWYdpwIEgOamVhtFXkiv2QPNwmZiCN0RjmxSqKgJEz0TFt/QytlTgjZ6akEpQlGQdCGTW2oV01INoxNBbMnX1OnqloUQZgrwIp0E059++xUD17pj7iFB6+YDqTxaGv0kicyrdCPUdeWjypFscajeyp9p3naCfBx9mIz27v+vbXGzDLdJpCnLurWe/ylNOUxizcdnpH24vlEOIqgNY8d2UHvRpuadSnEFQMPrKWUwcwqrQlxWQdK9+4SdDEJwO6rozvsSaAckPHrZezmYciRPbJKkdtF0Y2fz+QUMLRPeJv3lPLwtpj0DyTJmhGvHzEq5CgtgvhKuOz+Mr root@cpsc822\n'>]
+ kind: u'compute#metadata'>
+ creationTimestamp: u'2016-01-25T17:17:26.257-08:00'
+ enabledFeatures: []
+ id: 9276751378370442300L
+ kind: u'compute#project'
+ name: u'resume-for-me'
+ quotas: [<Quota
+ limit: 1000.0
+ metric: MetricValueValuesEnum(SNAPSHOTS, 16)
+ usage: 0.0>, <Quota
+ limit: 5.0
+ metric: MetricValueValuesEnum(NETWORKS, 14)
+ usage: 1.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(FIREWALLS, 4)
+ usage: 4.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(IMAGES, 7)
+ usage: 0.0>, <Quota
+ limit: 7.0
+ metric: MetricValueValuesEnum(STATIC_ADDRESSES, 19)
+ usage: 0.0>, <Quota
+ limit: 200.0
+ metric: MetricValueValuesEnum(ROUTES, 15)
+ usage: 2.0>, <Quota
+ limit: 15.0
+ metric: MetricValueValuesEnum(FORWARDING_RULES, 5)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(TARGET_POOLS, 24)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(HEALTH_CHECKS, 6)
+ usage: 0.0>, <Quota
+ limit: 23.0
+ metric: MetricValueValuesEnum(IN_USE_ADDRESSES, 12)
+ usage: 0.0>, <Quota
+ limit: 50.0
+ metric: MetricValueValuesEnum(TARGET_INSTANCES, 23)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(TARGET_HTTP_PROXIES, 22)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(URL_MAPS, 26)
+ usage: 0.0>, <Quota
+ limit: 3.0
+ metric: MetricValueValuesEnum(BACKEND_SERVICES, 1)
+ usage: 0.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(INSTANCE_TEMPLATES, 11)
+ usage: 0.0>, <Quota
+ limit: 5.0
+ metric: MetricValueValuesEnum(TARGET_VPN_GATEWAYS, 25)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(VPN_TUNNELS, 27)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(TARGET_HTTPS_PROXIES, 21)
+ usage: 0.0>, <Quota
+ limit: 10.0
+ metric: MetricValueValuesEnum(SSL_CERTIFICATES, 18)
+ usage: 0.0>, <Quota
+ limit: 100.0
+ metric: MetricValueValuesEnum(SUBNETWORKS, 20)
+ usage: 0.0>]
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/resume-for-me'
+ usageExportLocation: <UsageExportLocation
+ bucketName: u'resume4yitianli'
+ reportNamePrefix: u''>>]

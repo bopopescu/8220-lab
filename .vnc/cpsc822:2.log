@@ -1,0 +1,13 @@
+
+Xvnc TigerVNC 1.3.1 - built Nov 20 2015 20:53:05
+Copyright (C) 1999-2011 TigerVNC Team and many others (see README.txt)
+See http://www.tigervnc.org for information on TigerVNC.
+Underlying X server release 11702000, The X.Org Foundation
+
+
+Mon Jan 25 20:38:03 2016
+ vncext:      VNC extension running!
+ vncext:      Listening for VNC connections on all interface(s), port 5902
+ vncext:      created VNC server for screen 0
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":2"
+      after 141 requests (141 known processed) with 0 events remaining.

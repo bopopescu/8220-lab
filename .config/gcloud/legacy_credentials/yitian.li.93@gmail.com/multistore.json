@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "credential": {
+        "_class": "OAuth2Credentials",
+        "_module": "oauth2client.client",
+        "access_token": "ya29.dQJbmPXiR8WuvMTXeT8MU85UIqWqQcHLjvCR_9vZ_i0ZDUPmdfogP1AbSdwOATvxUlvo",
+        "client_id": "32555940559.apps.googleusercontent.com",
+        "client_secret": "ZmssLNjJy2998hD4CTg2ejr2",
+        "id_token": {
+          "at_hash": "GbOeHwQTeemL6A4deMoVsw",
+          "aud": "32555940559.apps.googleusercontent.com",
+          "azp": "32555940559.apps.googleusercontent.com",
+          "email": "yitian.li.93@gmail.com",
+          "email_verified": true,
+          "exp": 1453829665,
+          "iat": 1453826065,
+          "iss": "accounts.google.com",
+          "sub": "109240099713731257913"
+        },
+        "invalid": false,
+        "refresh_token": "1/cYef02CBnUCxE-_v0vs3HNY_DDUnJ440dTK378k4VgRIgOrJDtdun6zK6XiATCKT",
+        "revoke_uri": "https://accounts.google.com/o/oauth2/revoke",
+        "token_expiry": "2016-01-26T17:32:38Z",
+        "token_response": {
+          "access_token": "ya29.dQJbmPXiR8WuvMTXeT8MU85UIqWqQcHLjvCR_9vZ_i0ZDUPmdfogP1AbSdwOATvxUlvo",
+          "expires_in": 3600,
+          "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgyZGU5Y2RlOGQ0NmJkZjY4MzczMTg5YzA1ZTRlMDc4NDViYTlkNTQifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXRfaGFzaCI6IkdiT2VId1FUZWVtTDZBNGRlTW9Wc3ciLCJhdWQiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwOTI0MDA5OTcxMzczMTI1NzkxMyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImVtYWlsIjoieWl0aWFuLmxpLjkzQGdtYWlsLmNvbSIsImlhdCI6MTQ1MzgyNjA2NSwiZXhwIjoxNDUzODI5NjY1fQ.C_bbYjysZ5gsMwARaKQ5zeVpvrcMHO8Gfc1Sz2bt1RAr7MxEcQTwr3W4_pAc1d4XC1uYmd9tfgTodWn7nC0Dj1kh5bemi4cwJNhgcd3aa5OpvhBD87kgRNg3KXO04YTZ9tzmlrI3JZRVJttoZgUWCp1fLzUNZOikZUmXuvHMrLAQpVQoU_dAippS6yL7GvnIpocRfeJcdeON2Pp5pjRvCFWNq8ASOjshRpih6FXgkYyToHdNKIRXi6raptK0haYkdfo2MN9ItdPwS3IITHxuLvDytO1AK1Fy4q7HB0QHJqEamU6MUjf6S_6jfutdZ7_b0UcaHVK9t1kQy4q1aaS7hA",
+          "refresh_token": "1/cYef02CBnUCxE-_v0vs3HNY_DDUnJ440dTK378k4VgRIgOrJDtdun6zK6XiATCKT",
+          "token_type": "Bearer"
+        },
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "user_agent": "Cloud SDK Command Line Tool"
+      },
+      "key": {
+        "clientId": "32555940559.apps.googleusercontent.com",
+        "scope": "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/appengine.admin https://www.googleapis.com/auth/compute",
+        "userAgent": "Cloud SDK Command Line Tool"
+      }
+    }
+  ],
+  "file_version": 1
+}
