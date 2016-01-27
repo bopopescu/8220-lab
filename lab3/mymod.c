@@ -28,7 +28,7 @@
 #include "register.h"
 
 #define FIFO_ENTRIES 1024
-#define GRAPHICS_ON 0
+#define GRAPHICS_ON 1
 MODULE_LICENSE("Proprietary");
 MODULE_AUTHOR("Yitian Li");
 
