@@ -29,6 +29,7 @@ __attribute__((section("__versions"))) = {
 	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
 	{ 0x48d256, __VMLINUX_SYMBOL_STR(arch_dma_alloc_attrs) },
 	{ 0x1000e51, __VMLINUX_SYMBOL_STR(schedule) },
+	{ 0xeae3dfd6, __VMLINUX_SYMBOL_STR(__const_udelay) },
 	{ 0x16305289, __VMLINUX_SYMBOL_STR(warn_slowpath_null) },
 	{ 0xbc449561, __VMLINUX_SYMBOL_STR(dma_ops) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
@@ -47,4 +48,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "318C54C30FF29D88E8A4E66");
+MODULE_INFO(srcversion, "CB0562B5410D507ABD514C9");

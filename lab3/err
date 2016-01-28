@@ -1,0 +1,4 @@
+make -C /usr/src/linux M=/root/lab3 modules
+make[1]: Entering directory `/usr/src/kernels/linux-4.3.3'
+  CC [M]  /root/lab3/mymod.o
+make[1]: Leaving directory `/usr/src/kernels/linux-4.3.3'

@@ -277,3 +277,113 @@ vim .vimrc
 mv .vimrc .vimrc-bak
 vim lab3/mymod.c
 exit
+vim lab3/mymod.
+vim lab3/mymod.c 
+git comment -m "before lab3"
+git commit -m "before lab3"
+mv .vimrc-bak .vimrc
+git commit -a
+git commit -m "update before lab3"
+git add .
+git commit -m "update before lab3"
+git push
+exit
+cd lab3
+make
+ls
+cd ..
+cd lab2
+ls
+cd ..
+cp lab2/Makefile lab3/
+cd lab3/
+ls
+make
+vim mymod.c
+make
+vim mymod.c
+vim register.h
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+cd lab3
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+git commit -m "in the lab"
+git add .
+git commit -m "in the lab"
+git push
+git commit -m "in the lab"
+git pull
+ls
+make
+cd /dev/
+ls
+ls -all
+mknod -m 666 kyouko3 c 500 127
+cd ~
+cd lab3
+ls
+vim user.c
+make user
+./user 
+vim ~/.vimrc 
+vim user.c
+make user
+vim user.c
+make user
+./user 
+vim user.c
+make user.c
+make user
+./user 
+vim user.c
+make user
+./user 
+vim user.c
+make user
+./user 
+vim user.c
+insmod mymod.ko 
+./user 
+vim user.c
+make user
+vim user.c
+vim mymod.c 
+make user
+exit
+ls
+cd lab3
+make
+vim mymod.c 
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+exit

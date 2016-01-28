@@ -82,14 +82,14 @@ int kyouko3_remove(struct pci_dev * pci_dev){
 unsigned int K_READ_REG(unsigned int reg)
 {
     unsigned int value;
-    udelay(10);
+    udelay();
     //rmb();
     value = *(kyouko3.k_control_base+(reg>>2));
     return (value);
 }
 
 void K_WRITE_REG(unsigned int reg, unsigned int value){
-	udelay(10);
+	udelay();
 	*(kyouko3.k_control_base+(reg>>2))=value;
 }
 
@@ -163,59 +163,54 @@ int kyouko3_mmap(struct file *flip, struct vm_area_struct * vma){
 	return ret;
 }
 
-long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
+kyouko3_ioctl(struct inode *inode, struct file *fp, unsigned int cmd, unsigned long arg)
 {
-	long ret;
+	printk(KERN_ALERT "From Kernel: %x\n%x\n",cmd,arg);
+	printk(KERN_ALERT "CMD!%x\t\tARG!%x\n",cmd,arg);
 	switch (cmd){
 		case VMODE:{
-			//printk(KERN_ALERT "ARG!%x\n",arg);
+			printk(KERN_ALERT "ARG!%x\n",arg);
 			if (((int)(arg))==GRAPHICS_ON){
-				unsigned int one_as_int;
-				float one;
-
 				printk(KERN_ALERT "READY!");
-				
 				FIFO_WRITE(Frame_Objects+_FColumns,1024);
 				FIFO_WRITE(Frame_Objects+_FRows,768);
 				FIFO_WRITE(Frame_Objects+_FRowPitch,1024*4);
 				FIFO_WRITE(Frame_Objects+_FFormat,0xf888);
 				FIFO_WRITE(Frame_Objects+_FAddress,0);
-				
 				//set acceleration bitmask to 0x40000000
 				FIFO_WRITE(Acceleration,0x40000000);
-				
 				//set DAC
 				FIFO_WRITE(DAC_Objects+_DWidth,1024);
 				FIFO_WRITE(DAC_Objects+_DHeight,768);
 				FIFO_WRITE(DAC_Objects+_DVirtX,0);
 				FIFO_WRITE(DAC_Objects+_DVirtY,0);
 				FIFO_WRITE(DAC_Objects+_DFrame,0);
-			
 				//set ModeSet
 				FIFO_WRITE(ModeSet,1);			
 				msleep(10);
-				FIFO_WRITE(Clear_Color		,0x0);
-				FIFO_WRITE(Clear_Color+4	,0x0);
-				FIFO_WRITE(Clear_Color+8	,0x0);
-				one =1.0;
-				one_as_int=*(unsigned int*)&one;
-				FIFO_WRITE(Clear_Color+12	,one_as_int);
+				float *RGBA=(float *)arg;
+				unsigned int uintR=*(unsigned int *) &RGBA[0];
+				unsigned int uintG=*(unsigned int *) &RGBA[1];
+				unsigned int uintB=*(unsigned int *) &RGBA[2];
+				unsigned int uintA=*(unsigned int *) &RGBA[3];
+				FIFO_WRITE(Clear_Color,uintR);
+				FIFO_WRITE(Clear_Color+4,uintG);
+				FIFO_WRITE(Clear_Color+8,uintB);
+				FIFO_WRITE(Clear_Color+12,uintA);
+				
 				FIFO_WRITE(Clear_Buffer,0x03);
-				FIFO_WRITE(Flush,0x0);			
+				FIFO_WRITE(Flush,0x0);
+				
 				kyouko3.graphics_on=1;
 			}
 			else{//off
-				
-				FIFO_WRITE(Acceleration,0x80000000);
+				FIFO_WRITE(Acceleration,0);
 				FIFO_WRITE(ModeSet,0);
 				kyouko3.graphics_on=0;
-				
 			}			
 			break;
 		}
 		case FIFO_QUEUE:{
-			printk(KERN_ALERT "In Queue...\n");
-		
 			unsigned int ret;
 			struct fifo_entry entry;
 			ret=copy_from_user(
@@ -224,23 +219,17 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 				sizeof(struct fifo_entry)
 				);
 			FIFO_WRITE(entry.command, entry.value);
-		
 			break;
 		}
 		case FIFO_FLUSH:{
-			printk(KERN_ALERT "In Flush...\n");
-	
-
 			K_WRITE_REG(FifoHead,kyouko3.fifo.head);
 			while(kyouko3.fifo.tail_cache != kyouko3.fifo.head){
 				kyouko3.fifo.tail_cache= K_READ_REG(FifoTail);
 				schedule();
 			}
-			
 			break;
 		}
 	}
-	return 0;
 }
 
 

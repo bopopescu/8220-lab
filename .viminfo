@@ -6,14 +6,19 @@
 
 
 # hlsearch on (H) or off (h):
-~H
+~h
+# Last Search Pattern:
+~MSle0~/ioctl
+
 # Command Line History (newest to oldest):
 :wq
-:w
 :q
 :Wq
+:w
+:ew
 
 # Search String History (newest to oldest):
+?/ioctl
 
 # Expression History (newest to oldest):
 
@@ -22,39 +27,111 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
+"1	CHAR	0
+					kyouko3.fifo.tail_cache= K_READ_REG(FifoTail);
+					schedule();
+"2	LINE	0
 	
 ""-	CHAR	0
-		
+	/
+
+# global variables:
 
 # File marks:
-'0  254  0  ~/lab3/mymod.c
-'1  1  0  ~/lab3/mymod.
-'2  210  25  ~/lab3/mymod.c
-'3  307  0  ~/.vimrc
-'4  104  0  ~/lab3/mymod.c
-'5  2  0  /usr/bin/vnc4transmitter
-'6  147  12  ~/lab3/mymod.c
-'7  140  0  ~/lab3/mymod.c
-'8  124  0  ~/lab3/mymod.c
-'9  77  0  ~/lab3/mymod.c
+'0  63  1  ~/lab3/user.c
+'1  247  11  ~/lab3/mymod.c
+'2  209  32  ~/lab3/mymod.c
+'3  1  0  ~/lab3/err
+'4  205  4  ~/lab3/mymod.c
+'5  206  3  ~/lab3/mymod.c
+'6  200  18  ~/lab3/mymod.c
+'7  202  30  ~/lab3/mymod.c
+'8  197  34  ~/lab3/mymod.c
+'9  218  4  ~/lab3/mymod.c
 
 # Jumplist (newest first):
--'  254  0  ~/lab3/mymod.c
--'  210  4  ~/lab3/mymod.c
+-'  63  1  ~/lab3/user.c
+-'  247  11  ~/lab3/mymod.c
+-'  209  4  ~/lab3/mymod.c
+-'  205  4  ~/lab3/mymod.c
+-'  1  0  ~/lab3/err
+-'  206  3  ~/lab3/mymod.c
+-'  200  4  ~/lab3/mymod.c
+-'  202  4  ~/lab3/mymod.c
+-'  197  4  ~/lab3/mymod.c
+-'  218  3  ~/lab3/mymod.c
+-'  198  4  ~/lab3/mymod.c
+-'  193  4  ~/lab3/mymod.c
+-'  178  4  ~/lab3/mymod.c
+-'  183  4  ~/lab3/mymod.c
+-'  231  3  ~/lab3/mymod.c
+-'  47  1  ~/lab3/user.c
+-'  22  0  ~/lab3/mymod.c
+-'  29  0  ~/lab3/mymod.c
+-'  21  24  ~/lab3/register.h
+-'  28  0  ~/lab3/register.h
+-'  18  0  ~/lab3/mymod.c
+-'  48  1  ~/lab3/user.c
+-'  168  1  ~/lab3/mymod.c
+-'  67  0  ~/lab3/user.c
+-'  166  0  ~/lab3/mymod.c
+-'  51  1  ~/lab3/user.c
+-'  1  0  ~/lab3/mymod.c
+-'  12  0  ~/lab3/user.c
+-'  171  3  ~/lab3/mymod.c
+-'  52  1  ~/lab3/user.c
+-'  17  0  ~/lab3/user.c
+-'  169  106  ~/lab3/mymod.c
+-'  52  0  ~/lab3/register.h
+-'  10  0  ~/lab3/reg.h
+-'  1  0  ~/lab3/reg.h
+-'  176  4  ~/lab3/mymod.c
+-'  1  34  /usr/bin/kyouko3_make
+-'  251  1  ~/lab3/mymod.c
+-'  249  1  ~/lab3/mymod.c
+-'  195  4  ~/lab3/mymod.c
 -'  1  0  ~/lab3/mymod.
--'  104  1  ~/lab3/mymod.c
+-'  226  3  ~/lab3/mymod.c
+-'  60  1  ~/lab3/user.c
+-'  62  18  ~/lab3/user.c
+-'  50  1  ~/lab3/user.c
+-'  20  0  ~/lab3/user.c
+-'  56  1  ~/lab3/user.c
+-'  83  57  ~/.vimrc
 -'  307  0  ~/.vimrc
+-'  8  17  ~/lab3/user.c
+-'  1  0  ~/lab3/user.c
+-'  241  2  ~/lab3/mymod.c
+-'  215  2  ~/lab3/mymod.c
+-'  204  4  ~/lab3/mymod.c
+-'  219  3  ~/lab3/mymod.c
+-'  214  3  ~/lab3/mymod.c
+-'  222  4  ~/lab3/mymod.c
+-'  31  0  ~/lab3/mymod.c
+-'  9  0  ~/mymod.c
+-'  1  0  ~/mymod.c
+-'  103  0  ~/lab3/mymod.c
+-'  30  0  ~/lab3/mymod.c
+-'  100  1  ~/lab3/mymod.c
+-'  261  1  ~/lab3/mymod.c
+-'  28  0  ~/lab3/mymod.c
+-'  8  0  ~/lab3/register.h
+-'  1  0  ~/lab3/register.h
+-'  96  10  ~/lab3/register.h
+-'  86  38  ~/lab3/register.h
+-'  230  2  ~/lab3/mymod.c
+-'  223  4  ~/lab3/mymod.c
+-'  267  0  ~/lab3/mymod.c
+-'  213  4  ~/lab3/mymod.c
 -'  1  0  ~/.vimrc
--'  147  1  ~/lab3/mymod.c
+-'  143  1  ~/lab3/mymod.c
 -'  2  0  /usr/bin/vnc4transmitter
 -'  1  0  /usr/bin/vnc4transmitter
--'  140  0  ~/lab3/mymod.c
--'  124  8  ~/lab3/mymod.c
--'  77  1  ~/lab3/mymod.c
--'  152  0  ~/lab3/mymod.c
--'  90  1  ~/lab3/mymod.c
--'  1  0  ~/lab3/mymod.c
+-'  136  0  ~/lab3/mymod.c
+-'  120  8  ~/lab3/mymod.c
+-'  73  1  ~/lab3/mymod.c
+-'  148  0  ~/lab3/mymod.c
+-'  86  1  ~/lab3/mymod.c
 -'  1  0  /usr/bin/vnc
 -'  5  0  ~/.ssh/config
 -'  6  0  ~/.ssh/config
@@ -70,189 +147,278 @@
 -'  86  1  ~/lab2/mymod.c
 -'  1  0  ~/lab2/mymod.c
 -'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  2  0  ~/.ssh/config
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
 
 # History of marks within files (newest to oldest):
 
-> ~/lab3/mymod.c
-	"	254	0
-	^	117	0
-	.	231	0
-	+	103	1
-	+	127	87
-	+	51	0
-	+	52	1
-	+	53	1
-	+	54	1
-	+	45	1
+> ~/lab3/user.c
+	"	63	1
+	^	63	3
+	.	52	2
+	+	8	17
+	+	3	19
+	+	4	29
+	+	27	35
+	+	28	27
+	+	35	46
+	+	36	53
+	+	38	66
+	+	40	50
+	+	43	10
+	+	49	102
+	+	50	116
+	+	51	42
+	+	52	50
+	+	54	42
+	+	59	47
+	+	60	53
+	+	61	27
+	+	62	41
+	+	63	31
+	+	65	1
+	+	23	3
+	+	24	1
+	+	31	1
+	+	32	1
+	+	36	3
+	+	40	0
+	+	38	0
+	+	40	3
+	+	45	3
 	+	46	1
-	+	109	11
-	+	127	0
-	+	134	1
-	+	144	1
-	+	142	21
-	+	145	22
-	+	144	31
-	+	146	59
-	+	156	22
-	+	157	1
-	+	162	1
-	+	156	1
-	+	162	34
-	+	163	0
-	+	232	0
-	+	231	268
-	+	175	3
-	+	176	3
-	+	177	3
-	+	178	2
-	+	179	3
-	+	179	51
-	+	181	3
-	+	181	43
-	+	181	115
-	+	181	49
-	+	182	40
-	+	182	40
-	+	183	3
-	+	185	3
-	+	180	3
-	+	186	4
-	+	187	4
-	+	184	3
-	+	183	12
-	+	188	4
-	+	189	6
-	+	190	4
-	+	189	16
-	+	191	4
-	+	192	4
-	+	193	4
-	+	194	4
-	+	195	4
-	+	196	9
-	+	197	4
-	+	198	4
-	+	199	4
-	+	200	4
-	+	202	3
-	+	203	4
-	+	204	4
-	+	205	3
-	+	206	3
-	+	207	2
-	+	208	2
-	+	209	3
-	+	210	3
-	+	211	2
-	+	212	3
-	+	213	1
-	+	214	1
-	+	215	1
-	+	207	2
-	+	208	3
-	+	209	3
-	+	210	3
-	+	211	2
-	+	212	2
-	+	213	1
-	+	214	1
-	+	217	4
+	+	47	1
+	+	48	1
+	+	49	1
+	+	50	1
+	+	51	1
+	+	52	1
+	+	54	2
+	+	55	1
+	+	56	1
+	+	57	1
+	+	58	1
+	+	59	1
+	+	60	1
+	+	61	1
+	+	62	1
+	+	63	1
+	+	64	1
+	+	66	0
+	+	12	16
+	+	18	14
+	+	12	13
+	+	18	40
+	+	19	18
+	+	18	18
+	+	19	24
+	+	18	20
+	+	19	47
+	+	20	32
+	+	29	0
+	+	28	19
+	+	20	23
+	+	50	45
+	+	62	29
+	+	60	23
+	+	17	22
+	+	52	16
+	+	51	11
+	+	12	14
+	+	51	15
+	+	18	20
+	+	51	14
+	+	52	2
+
+> ~/lab3/mymod.c
+	"	247	11
+	^	209	33
+	.	239	2
+	+	168	23
+	+	171	25
+	+	177	0
+	+	176	31
+	+	168	2
+	+	170	0
+	+	168	30
+	+	171	32
+	+	168	25
+	+	171	29
+	+	168	27
+	+	166	82
+	+	168	51
+	+	36	0
+	+	85	8
+	+	92	3
+	+	88	4
+	+	87	4
+	+	86	4
+	+	85	4
+	+	84	4
+	+	168	9
+	+	173	4
+	+	177	5
+	+	204	53
+	+	208	5
+	+	212	5
 	+	218	4
-	+	219	4
-	+	220	3
-	+	220	3
-	+	221	3
-	+	222	0
-	+	222	0
-	+	222	0
-	+	222	1
-	+	223	2
-	+	224	43
-	+	225	3
-	+	226	4
-	+	223	2
 	+	227	4
-	+	228	3
-	+	229	2
-	+	229	2
-	+	230	1
-	+	231	0
+	+	212	5
+	+	233	0
+	+	230	19
+	+	232	3
+	+	239	4
+	+	217	37
+	+	231	37
+	+	169	2
+	+	169	56
+	+	169	1
+	+	176	0
+	+	171	4
+	+	205	0
+	+	177	4
+	+	183	3
+	+	186	5
+	+	212	5
+	+	208	4
+	+	209	37
+	+	212	4
+	+	186	3
+	+	193	3
+	+	198	5
+	+	198	116
+	+	197	268
+	+	197	5
+	+	197	36
+	+	197	88
+	+	197	140
+	+	197	192
+	+	197	266
+	+	205	26
+	+	198	111
+	+	198	4
+	+	197	5
+	+	203	5
+	+	205	0
+	+	197	4
+	+	203	4
+	+	197	32
+	+	209	34
+	+	198	37
+	+	199	37
+	+	202	36
+	+	198	27
+	+	199	27
+	+	202	28
+	+	197	30
+	+	198	31
+	+	199	31
+	+	202	31
+	+	197	30
+	+	198	31
+	+	199	31
+	+	202	31
+	+	197	30
+	+	198	32
+	+	199	32
+	+	202	32
+	+	201	35
+	+	202	40
+	+	201	4
+	+	200	4
+	+	175	0
+	+	173	28
+	+	174	12
+	+	209	33
+	+	218	1
+	+	227	1
+	+	232	0
+	+	239	2
+
+> ~/lab3/err
+	"	1	0
+
+> ~/lab3/register.h
+	"	21	24
+	^	21	25
+	.	21	25
+	+	86	38
+	+	89	38
+	+	98	50
+	+	99	52
+	+	100	54
+	+	101	53
+	+	102	54
+	+	103	40
+	+	165	1
+	+	96	10
+	+	8	0
+	+	8	0
+	+	3	19
+	+	4	29
+	+	8	36
+	+	16	45
+	+	17	47
+	+	18	49
+	+	19	48
+	+	20	49
+	+	21	35
+	+	78	2
+	+	12	2
+	+	13	2
+	+	67	3
+	+	11	1
+	+	12	1
+	+	13	1
+	+	68	1
+	+	69	1
+	+	70	1
+	+	71	1
+	+	73	1
+	+	74	1
+	+	73	1
+	+	74	1
+	+	75	1
+	+	76	1
+	+	77	8
+	+	73	12
+	+	69	12
+	+	68	11
+	+	67	10
+	+	68	11
+	+	69	12
+	+	70	13
+	+	71	14
+	+	73	12
+	+	69	15
+	+	74	12
+	+	75	12
+	+	76	12
+	+	77	12
+	+	16	22
+	+	17	24
+	+	18	26
+	+	19	25
+	+	21	25
+
+> ~/lab3/reg.h
+	"	10	0
+	.	10	0
+	+	10	0
+
+> /usr/bin/kyouko3_make
+	"	1	34
+	^	1	35
+	.	1	34
+	+	1	34
+	i	1	0
+	k	1	0
 
 > ~/lab3/mymod.
 	"	1	0
 
 > ~/.vimrc
-	"	307	0
-	^	307	0
-	.	285	0
+	"	83	57
+	^	83	58
+	.	83	57
 	+	271	1
 	+	272	1
 	+	275	1
@@ -284,6 +450,13 @@
 	+	273	0
 	+	274	0
 	+	285	0
+	+	82	47
+	+	83	57
+
+> ~/mymod.c
+	"	9	0
+	.	9	0
+	+	9	0
 
 > /usr/bin/vnc4transmitter
 	"	2	0
