@@ -70,7 +70,7 @@ struct pci_device_id kyouko3_dev_ids[]=
 int kyouko3_probe(struct pci_dev * pci_dev, const struct pci_device_id * pci_id){
 	kyouko3.p_control_base=pci_resource_start(pci_dev,1);
 	kyouko3.p_card_ram_base=pci_resource_start(pci_dev,2);
-	kyouko3.pdev=pci_dev->irq;
+	kyouko3.pdev=pci_dev;
 	pci_enable_device(pci_dev);
 	pci_set_master(pci_dev);
 };
@@ -175,24 +175,24 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 
 				printk(KERN_ALERT "READY!");
 				
-				FIFO_WRITE(Frame_Objects+_FColumns,1024);
-				FIFO_WRITE(Frame_Objects+_FRows,768);
-				FIFO_WRITE(Frame_Objects+_FRowPitch,1024*4);
-				FIFO_WRITE(Frame_Objects+_FFormat,0xf888);
-				FIFO_WRITE(Frame_Objects+_FAddress,0);
+				K_WRITE_REG(Frame_Objects+_FColumns,1024);
+				K_WRITE_REG(Frame_Objects+_FRows,768);
+				K_WRITE_REG(Frame_Objects+_FRowPitch,1024*4);
+				K_WRITE_REG(Frame_Objects+_FFormat,0xf888);
+				K_WRITE_REG(Frame_Objects+_FAddress,0);
 				
 				//set acceleration bitmask to 0x40000000
-				FIFO_WRITE(Acceleration,0x40000000);
+				K_WRITE_REG(Acceleration,0x40000000);
 				
 				//set DAC
-				FIFO_WRITE(DAC_Objects+_DWidth,1024);
-				FIFO_WRITE(DAC_Objects+_DHeight,768);
-				FIFO_WRITE(DAC_Objects+_DVirtX,0);
-				FIFO_WRITE(DAC_Objects+_DVirtY,0);
-				FIFO_WRITE(DAC_Objects+_DFrame,0);
+				K_WRITE_REG(DAC_Objects+_DWidth,1024);
+				K_WRITE_REG(DAC_Objects+_DHeight,768);
+				K_WRITE_REG(DAC_Objects+_DVirtX,0);
+				K_WRITE_REG(DAC_Objects+_DVirtY,0);
+				K_WRITE_REG(DAC_Objects+_DFrame,0);
 			
 				//set ModeSet
-				FIFO_WRITE(ModeSet,1);			
+				K_WRITE_REG(ModeSet,1);			
 				msleep(10);
 				FIFO_WRITE(Clear_Color		,0x0);
 				FIFO_WRITE(Clear_Color+4	,0x0);
@@ -206,8 +206,8 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 			}
 			else{//off
 				
-				FIFO_WRITE(Acceleration,0x80000000);
-				FIFO_WRITE(ModeSet,0);
+				K_WRITE_REG(Acceleration,0x80000000);
+				K_WRITE_REG(ModeSet,0);
 				kyouko3.graphics_on=0;
 				
 			}			
@@ -224,7 +224,7 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 				sizeof(struct fifo_entry)
 				);
 			FIFO_WRITE(entry.command, entry.value);
-		
+			printk(KERN_ALERT "ret=%d\n",ret);	
 			break;
 		}
 		case FIFO_FLUSH:{
