@@ -387,3 +387,150 @@ rmmod mymod
 insmod mymod.ko 
 ./user 
 exit
+vim lab3/mymod.c
+make
+cd lab3/
+make
+exit
+vnc4transmitter 
+vim lab3/mymod.c
+cd lab3
+ls
+make
+kyouko3_make 
+insmod mymod
+insmod mymod.ko 
+./user 
+vim user.c
+make user
+./user 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+ls
+./user 
+vim mymod.c
+./user 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+vim mymod.c
+make
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+make
+vim mymod.c
+touch err
+make >err
+cat err 
+vim err
+make >err
+vnc4transmitter 
+./user 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+vim user.c 
+cd ..
+git add .
+git commit -m "aftermath"
+git push
+vnc4transmitter 
+cd lab3
+rmmod mymod
+insmod mymod.ko 
+./user 
+git add .
+git commit -m "before class2"
+git push
+./user 
+vim mymod
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+exit
+shutdown
+
+ls
+cd lab3
+ls
+vim mymod.c
+vim user.c 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+make user
+vim user.c 
+make user
+vim user.c 
+make user
+vim reg.h
+vim register.h 
+make user
+vim register.h 
+make user
+./user 
+exit
+cd lab3/
+ls
+./user 
+make
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+exit
+./user 
+cd lab3/
+ls
+vim user.c 
+vim mymod.c
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+exit
+vnc4transmitter 
+cd lab3
+./user 
+vim user.c 
+vim mymod.c
+cd /dev/
+kyouko3_make 
+cd ~
+cd lab3/
+ls
+./user 
+vnc4transmitter 
+./user 
+vim mymod.c
+vim user.c 
+make
+rmmod mymod
+insmod mymod.ko 
+./user 
+vim mymod.c
+vnc4transmitter 
+exit

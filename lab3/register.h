@@ -6,11 +6,15 @@
  ************************************************************************/
 
 #define KYOUKOR_CONTROL_SIZE (65536)
+#define KYOUKOR_CONTROL_SIZE (65536)
+#define GRAPHICS_ON 9
+#define GRAPHICS_OFF 7
+#define FIFO_ENTRIES 1024
 
 struct kyouko2_dma_hdr{
-	uint32_t address:14;
-	uint32_t count:10;
-	uint32_t opcode:8;
+	unsigned int address:14;
+	unsigned int count:10;
+	unsigned int opcode:8;
 }hdr;
 
 #define VMODE					_IOW(0xcc,0,unsigned long)

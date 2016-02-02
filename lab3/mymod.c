@@ -27,9 +27,6 @@
 #include <linux/gpio.h> 
 #include "register.h"
 
-#define FIFO_ENTRIES 1024
-#define GRAPHICS_ON 1
-
 MODULE_LICENSE("Proprietary");
 MODULE_AUTHOR("Yitian Li");
 
@@ -56,7 +53,6 @@ struct kyouko3_data{
 	struct pci_dev * pdev;
 	unsigned int * k_control_base;
 	unsigned int * k_card_ram_base;
-	void __iomem * ioaddr;
 	struct fifo fifo;
 	unsigned int graphics_on;
 } kyouko3;
@@ -82,21 +78,20 @@ int kyouko3_remove(struct pci_dev * pci_dev){
 unsigned int K_READ_REG(unsigned int reg)
 {
     unsigned int value;
-    udelay(10);
+    udelay(1);
     //rmb();
     value = *(kyouko3.k_control_base+(reg>>2));
     return (value);
 }
 
 void K_WRITE_REG(unsigned int reg, unsigned int value){
-	udelay(10);
+	udelay(1);
 	*(kyouko3.k_control_base+(reg>>2))=value;
 }
 
 void pause(void){
 	while (K_READ_REG(FifoTail)!=0) 
-		schedule();//to some emergen guy then return;
-	//return (1);
+		schedule();
 }
 
 int init_fifo(void){
@@ -159,7 +154,18 @@ int kyouko3_release(struct inode *inode, struct file *fp){
 }
 int kyouko3_mmap(struct file *flip, struct vm_area_struct * vma){
 	int ret;
-	ret = remap_pfn_range(vma, vma->vm_start,(unsigned int )(kyouko3.p_control_base)>>PAGE_SHIFT, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
+	
+	if((vma->vm_pgoff)<<PAGE_SHIFT == 0x0){
+		printk(KERN_ALERT "I am in controlMMP\n");
+		ret = remap_pfn_range(vma, vma->vm_start,(unsigned int )(kyouko3.p_control_base)>>PAGE_SHIFT, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
+		printk(KERN_ALERT "controlMMPret: %d\n", ret);
+	}
+	if((vma->vm_pgoff)<<PAGE_SHIFT == 0x80000000){
+		printk(KERN_ALERT "I am in framBufferMMP\n");
+		ret = remap_pfn_range(vma, vma->vm_start,(unsigned int )(kyouko3.p_card_ram_base)>>PAGE_SHIFT, (unsigned long)(vma->vm_end-vma->vm_start), vma->vm_page_prot);
+		printk(KERN_ALERT "ramMMPret: %d\n", ret);
+	}
+
 	return ret;
 }
 
@@ -170,11 +176,12 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 		case VMODE:{
 			//printk(KERN_ALERT "ARG!%x\n",arg);
 			if (((int)(arg))==GRAPHICS_ON){
-				unsigned int one_as_int;
+ 				unsigned int one_as_int;
 				float one;
 
 				printk(KERN_ALERT "READY!");
 				
+				//set frame0
 				K_WRITE_REG(Frame_Objects+_FColumns,1024);
 				K_WRITE_REG(Frame_Objects+_FRows,768);
 				K_WRITE_REG(Frame_Objects+_FRowPitch,1024*4);
@@ -191,15 +198,18 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 				K_WRITE_REG(DAC_Objects+_DVirtY,0);
 				K_WRITE_REG(DAC_Objects+_DFrame,0);
 			
+				//calculating float
+				one=1.0;
+				one_as_int=* (unsigned int *) &one;
+				
 				//set ModeSet
 				K_WRITE_REG(ModeSet,1);			
 				msleep(10);
-				FIFO_WRITE(Clear_Color		,0x0);
-				FIFO_WRITE(Clear_Color+4	,0x0);
-				FIFO_WRITE(Clear_Color+8	,0x0);
-				one =1.0;
-				one_as_int=*(unsigned int*)&one;
+				FIFO_WRITE(Clear_Color		,0);
+				FIFO_WRITE(Clear_Color+4	,0);
+				FIFO_WRITE(Clear_Color+8	,0);
 				FIFO_WRITE(Clear_Color+12	,one_as_int);
+				
 				FIFO_WRITE(Clear_Buffer,0x03);
 				FIFO_WRITE(Flush,0x0);			
 				kyouko3.graphics_on=1;
@@ -220,7 +230,7 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 			struct fifo_entry entry;
 			ret=copy_from_user(
 				&entry, 
-				(struct fifo_entry *) arg,
+				(unsigned int*) arg,
 				sizeof(struct fifo_entry)
 				);
 			FIFO_WRITE(entry.command, entry.value);
