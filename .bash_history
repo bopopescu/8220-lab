@@ -534,3 +534,24 @@ insmod mymod.ko
 vim mymod.c
 vnc4transmitter 
 exit
+git add.
+git add .
+git commit -m "before week 3"
+git push
+exit
+ls
+cd lab3/
+ls
+cd ..
+mkdir lab4 && cp lab3/*.* lab4/
+cd lab4/
+ls -all
+vim mymod.c
+make user.c 
+ls ..
+cd lab3
+cd ..
+cd lab3
+ls
+./user 
+exit
