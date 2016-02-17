@@ -169,6 +169,11 @@ int kyouko3_mmap(struct file *flip, struct vm_area_struct * vma){
 	return ret;
 }
 
+void init_transfer(void)
+{
+	
+}
+
 long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 {
 	long ret;
@@ -249,6 +254,17 @@ long kyouko3_ioctl(struct file *fp, unsigned int cmd, unsigned long arg)
 			
 			break;
 		}
+		case START_DMA:{
+			
+			break;
+		}
+		case BIND_DMA:{
+			break;
+
+		}
+		case UNBIND_DMA:{
+			break;
+		}
 	}
 	return 0;
 }
@@ -260,8 +276,6 @@ struct file_operations kyouko3_fops = {
 	.unlocked_ioctl=	kyouko3_ioctl,
 	.mmap=				kyouko3_mmap,
 	.owner=				THIS_MODULE
-};
-
 int my_init_function(void)
 {
 	cdev_init(&kyouko3_cdev, &kyouko3_fops);

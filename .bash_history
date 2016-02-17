@@ -555,3 +555,36 @@ cd lab3
 ls
 ./user 
 exit
+cd lab3
+cd ..
+git add .
+git status
+git add .
+git add -A
+git commit -m "before lab4"
+git push
+cd lab3
+ls
+cd ..
+cd lab4
+make clean
+ls
+vim mymod.c
+cd lab3/
+cd ..
+cd lab4/
+ls
+vim mymod.c
+exit
+ls
+cd lab4
+vim mymod.c
+exit
+cd lab4
+ls
+vim mymod.c
+exit
+cd lab4/
+ls
+vim mymod.c
+exit
