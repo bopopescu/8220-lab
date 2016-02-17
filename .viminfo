@@ -8,17 +8,20 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/io
+~MSle0~/__NR_syscalls
 
 # Command Line History (newest to oldest):
+:wq
 :q
 :w
-:wq
 :qwe:Wq:
 :Wq
 :ew
 
 # Search String History (newest to oldest):
+?/__NR_syscalls
+?/__NR_
+?/syscall
 ?/udelay
 ?/io
 ?/ioctl
@@ -30,7 +33,7 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
 	
 "2	LINE	0
 	};
@@ -43,24 +46,42 @@
 					schedule();
 "6	LINE	0
 	
-"-	CHAR	0
-	i
 
 # global variables:
 
 # File marks:
-'0  74  44  ~/lab4/mymod.c
-'1  146  20  ~/lab4/mymod.c
-'2  115  11  ~/lab4/mymod.c
-'3  248  0  ~/lab4/mymod.c
-'4  1  0  /usr/bin/kyouko3_make
-'5  184  0  ~/lab4/mymod.c
-'6  268  29  ~/lab3/mymod.c
-'7  105  0  ~/lab3/user.c
-'8  28  25  ~/lab3/mymod.c
-'9  88  8  ~/lab3/mymod.c
+'0  13  0  ~/lab6/user.c
+'1  334  29  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+'2  107  26  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+'3  111  2  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+'4  135  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+'5  889  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+'6  305  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+'7  716  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+'8  123  18  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+'9  887  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
 
 # Jumplist (newest first):
+-'  13  0  ~/lab6/user.c
+-'  8  17  ~/lab6/user.c
+-'  1  0  ~/lab6/user.c
+-'  334  29  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+-'  107  26  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+-'  111  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+-'  305  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+-'  135  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+-'  123  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+-'  889  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+-'  716  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+-'  718  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+-'  887  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+-'  1  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
+-'  1  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+-'  1  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+-'  617  8  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+-'  616  29  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+-'  612  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+-'  1  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
 -'  74  44  ~/lab4/mymod.c
 -'  146  1  ~/lab4/mymod.c
 -'  115  8  ~/lab4/mymod.c
@@ -140,27 +161,58 @@
 -'  1  0  /usr/bin/vnc4transmitter
 -'  131  0  ~/lab3/mymod.c
 -'  115  8  ~/lab3/mymod.c
--'  69  1  ~/lab3/mymod.c
--'  143  0  ~/lab3/mymod.c
--'  82  1  ~/lab3/mymod.c
--'  1  0  /usr/bin/vnc
--'  5  0  ~/.ssh/config
--'  6  0  ~/.ssh/config
--'  1  0  ~/.ssh/config
--'  7  0  ~/.ssh/config
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  86  1  ~/lab2/mymod.c
--'  1  0  ~/lab2/mymod.c
--'  97  14  ~/lab2/mymod.c
--'  195  4  ~/lab3/mymod.c
--'  234  3  ~/lab3/mymod.c
--'  1  0  ~/lab3/mymod
--'  246  0  ~/lab3/mymod.c
 
 # History of marks within files (newest to oldest):
+
+> ~/lab6/user.c
+	"	13	0
+	^	13	1
+	.	11	10
+	+	8	35
+	+	9	37
+	+	10	12
+	+	11	14
+	+	13	7
+	+	9	17
+	+	11	2
+	+	10	0
+	+	11	3
+	+	12	3
+	+	13	0
+	+	11	10
+
+> /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+	"	334	29
+	^	334	30
+	.	334	30
+	+	334	30
+
+> /usr/src/kernels/linux-4.3.3/kernel/sys.c
+	"	107	26
+	^	107	0
+	.	107	0
+	+	112	0
+	+	107	36
+	+	108	1
+	+	109	52
+	+	110	11
+	+	107	1
+	+	111	1
+	+	107	0
+
+> /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+	"	889	0
+	^	889	2
+	.	889	1
+	+	889	1
+
+> /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
+	"	716	0
+	^	716	0
+	.	717	0
+	+	716	26
+	+	718	24
+	+	717	0
 
 > ~/lab4/mymod.c
 	"	74	44

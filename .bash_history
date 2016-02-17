@@ -588,3 +588,53 @@ cd lab4/
 ls
 vim mymod.c
 exit
+git add .
+git commit -m "before lab6"
+git push
+uname -r
+uname -a
+uname
+cd /usr/src/
+ls
+yum install build-essential kernel-package libncurses5-dev
+yum install libqt4-dev
+ls
+cd linux/
+ls
+ls -a
+cd ..
+ls
+make clean
+ls
+rm *.ko
+rm *.o
+rm mymod*
+ls 
+rm test
+rm test.c 
+ls
+cd kernels/
+ls
+cd linux-4.3.3
+ls
+ls -a
+cd include/uapi/asm-generic/
+ls
+vim unistd.h 
+cd ..
+vim arch/x86/entry/syscalls/syscall_64.tbl
+cd include/linux/
+vim syscalls.h 
+cd ..
+cd kernel/
+vim sys.c 
+cd ..
+make xconfig
+make
+cd include/linux/
+vim syscalls.h 
+cd ..
+vim include/uapi/asm-generic/unistd.h 
+vim arch/x86/entry/syscalls/syscall_64.tbl
+make
+exit
