@@ -8,17 +8,21 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/__NR_syscalls
+~MSle0~/kill
 
 # Command Line History (newest to oldest):
 :wq
-:q
 :w
-:qwe:Wq:
+:q
 :Wq
+:qwe:Wq:
 :ew
 
 # Search String History (newest to oldest):
+?/kill
+?/sys_kill
+?/sighand
+?/core-y
 ?/__NR_syscalls
 ?/__NR_
 ?/syscall
@@ -33,6 +37,8 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+""0	LINE	0
+					ret = kill(pid, SIGCONT);
 "1	LINE	0
 	
 "2	LINE	0
@@ -46,151 +52,381 @@
 					schedule();
 "6	LINE	0
 	
+"7	LINE	0
+	
+"-	CHAR	0
+	printf("kill SIGCONT returned %d\n\n");
 
 # global variables:
 
 # File marks:
-'0  13  0  ~/lab6/user.c
-'1  334  29  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
-'2  107  26  /usr/src/kernels/linux-4.3.3/kernel/sys.c
-'3  111  2  /usr/src/kernels/linux-4.3.3/kernel/sys.c
-'4  135  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
-'5  889  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
-'6  305  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
-'7  716  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
-'8  123  18  /usr/src/kernels/linux-4.3.3/kernel/sys.c
-'9  887  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
+'0  20  2  ~/Project2/lab2/user.c
+'1  52  8  ~/Project2/lab2/user.c
+'2  48  0  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+'3  67  11  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+'4  20  35  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+'5  70  0  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+'6  2922  18  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+'7  2914  6  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+'8  2911  1  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+'9  2916  31  /usr/src/kernels/linux-4.3.3/kernel/signal.c
 
 # Jumplist (newest first):
--'  13  0  ~/lab6/user.c
--'  8  17  ~/lab6/user.c
--'  1  0  ~/lab6/user.c
--'  334  29  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
--'  107  26  /usr/src/kernels/linux-4.3.3/kernel/sys.c
--'  111  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
--'  305  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
--'  135  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
--'  123  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
--'  889  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
--'  716  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  718  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  887  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
--'  1  0  /usr/src/kernels/linux-4.3.3/kernel/sys.c
--'  1  0  /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
--'  1  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
--'  617  8  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  616  29  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  612  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  1  0  /usr/src/kernels/linux-4.3.3/include/uapi/asm-generic/unistd.h
--'  74  44  ~/lab4/mymod.c
--'  146  1  ~/lab4/mymod.c
--'  115  8  ~/lab4/mymod.c
--'  248  0  ~/lab4/mymod.c
--'  184  5  ~/lab4/mymod.c
--'  1  0  /usr/bin/kyouko3_make
--'  1  0  ~/lab4/mymod.c
--'  268  29  ~/lab3/mymod.c
--'  28  21  ~/lab3/mymod.c
--'  105  0  ~/lab3/user.c
--'  88  1  ~/lab3/mymod.c
--'  219  4  ~/lab3/mymod.c
--'  31  0  ~/lab3/mymod.c
--'  261  1  ~/lab3/mymod.c
--'  13  0  ~/lab3/user.c
--'  17  12  ~/lab3/register.h
--'  12  0  ~/lab3/register.h
--'  25  0  ~/lab3/register.h
--'  10  0  ~/lab3/reg.h
--'  14  0  ~/lab3/user.c
--'  1  0  ~/lab3/user.c
--'  233  5  ~/lab3/mymod.c
--'  6  1371  ~/lab3/user.c
--'  210  4  ~/lab3/mymod.c
--'  245  3  ~/lab3/mymod.c
--'  1  0  ~/lab3/mymod
--'  257  0  ~/lab3/mymod.c
--'  215  4  ~/lab3/mymod.c
--'  1  0  ~/lab3/err
--'  216  3  ~/lab3/mymod.c
--'  211  4  ~/lab3/mymod.c
--'  208  4  ~/lab3/mymod.c
--'  228  3  ~/lab3/mymod.c
--'  209  4  ~/lab3/mymod.c
--'  200  4  ~/lab3/mymod.c
--'  184  4  ~/lab3/mymod.c
--'  190  4  ~/lab3/mymod.c
--'  241  3  ~/lab3/mymod.c
--'  22  0  ~/lab3/mymod.c
--'  32  0  ~/lab3/register.h
--'  18  0  ~/lab3/mymod.c
--'  174  1  ~/lab3/mymod.c
--'  172  0  ~/lab3/mymod.c
--'  1  0  ~/lab3/mymod.c
--'  177  3  ~/lab3/mymod.c
--'  175  106  ~/lab3/mymod.c
--'  56  0  ~/lab3/register.h
--'  1  0  ~/lab3/reg.h
--'  182  4  ~/lab3/mymod.c
--'  259  1  ~/lab3/mymod.c
--'  206  4  ~/lab3/mymod.c
--'  1  0  ~/lab3/mymod.
--'  236  3  ~/lab3/mymod.c
--'  83  57  ~/.vimrc
--'  307  0  ~/.vimrc
--'  251  2  ~/lab3/mymod.c
--'  225  2  ~/lab3/mymod.c
--'  214  4  ~/lab3/mymod.c
--'  229  3  ~/lab3/mymod.c
--'  224  3  ~/lab3/mymod.c
--'  232  4  ~/lab3/mymod.c
--'  9  0  ~/mymod.c
--'  1  0  ~/mymod.c
--'  98  0  ~/lab3/mymod.c
--'  95  1  ~/lab3/mymod.c
--'  271  1  ~/lab3/mymod.c
--'  8  0  ~/lab3/register.h
--'  1  0  ~/lab3/register.h
--'  100  10  ~/lab3/register.h
--'  90  38  ~/lab3/register.h
--'  240  2  ~/lab3/mymod.c
--'  277  0  ~/lab3/mymod.c
--'  223  4  ~/lab3/mymod.c
--'  1  0  ~/.vimrc
--'  138  1  ~/lab3/mymod.c
--'  2  0  /usr/bin/vnc4transmitter
--'  1  0  /usr/bin/vnc4transmitter
--'  131  0  ~/lab3/mymod.c
--'  115  8  ~/lab3/mymod.c
+-'  20  2  ~/Project2/lab2/user.c
+-'  52  43  ~/Project2/lab2/user.c
+-'  41  3  ~/Project2/lab2/user.c
+-'  48  0  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  67  1  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  20  1  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  70  0  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  2922  18  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2914  3  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2911  2  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2916  2  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2915  2  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2919  2  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  52  1  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  1  0  /usr/src/kernels/linux-4.3.3
+-'  19  0  ~/Project2/lab2/user.c
+-'  1  0  ~/Project2/lab2/user.c
+-'  57  1  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  29  26  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  54  4  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  515  5  /usr/src/kernels/linux-4.3.3/include/linux/sched.h
+-'  59  3  /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+-'  2899  0  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2892  8  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2821  33  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2728  11  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2633  37  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2599  37  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2547  58  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2529  34  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2340  40  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2290  40  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2251  47  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  2081  57  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1844  9  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1839  55  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1837  21  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1809  54  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1808  45  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1806  14  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1803  36  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1793  13  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1791  56  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1787  10  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1670  21  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1521  14  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1519  8  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1517  4  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1515  14  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1510  9  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1505  4  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1463  38  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1433  10  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1426  8  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1420  11  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1416  24  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1414  70  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1411  18  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1396  21  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1392  27  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1376  4  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1375  8  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1365  11  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1360  9  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1356  4  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1334  4  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1319  6  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1315  5  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1305  13  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1248  35  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1224  32  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1203  38  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1099  17  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1055  47  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1054  20  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1046  10  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  988  29  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  977  37  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  960  16  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  958  33  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  954  12  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  909  15  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  838  20  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  791  22  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  776  6  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  759  17  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  749  36  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  738  11  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  736  40  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  693  2  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  689  13  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  651  28  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  502  1  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  1  0  /usr/src/kernels/linux-4.3.3/kernel/signal.c
+-'  373  14  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
+-'  257  0  /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
 
 # History of marks within files (newest to oldest):
 
-> ~/lab6/user.c
-	"	13	0
-	^	13	1
-	.	11	10
-	+	8	35
-	+	9	37
-	+	10	12
-	+	11	14
-	+	13	7
-	+	9	17
-	+	11	2
-	+	10	0
-	+	11	3
-	+	12	3
-	+	13	0
-	+	11	10
+> ~/Project2/lab2/user.c
+	"	20	2
+	^	20	3
+	.	20	2
+	+	15	7
+	+	28	36
+	+	30	28
+	+	58	1
+	+	58	1
+	+	12	16
+	+	14	0
+	+	15	34
+	+	16	16
+	+	15	21
+	+	16	34
+	+	28	10
+	+	29	0
+	+	59	0
+	+	30	1
+	+	18	10
+	+	19	1
+	+	22	33
+	+	15	0
+	+	31	20
+	+	32	8
+	+	33	25
+	+	37	12
+	+	38	12
+	+	32	6
+	+	22	31
+	+	22	38
+	+	17	0
+	+	23	0
+	+	36	12
+	+	38	33
+	+	39	12
+	+	36	4
+	+	43	12
+	+	44	42
+	+	45	14
+	+	46	40
+	+	47	29
+	+	49	13
+	+	49	29
+	+	50	23
+	+	48	30
+	+	57	1
+	+	33	20
+	+	41	8
+	+	51	29
+	+	52	11
+	+	46	38
+	+	48	36
+	+	50	39
+	+	52	0
+	+	55	0
+	+	53	4
+	+	53	4
+	+	54	0
+	+	53	27
+	+	54	24
+	+	35	19
+	+	24	11
+	+	25	0
+	+	26	18
+	+	34	25
+	+	36	3
+	+	21	13
+	+	20	2
+
+> /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.c
+	"	48	0
+	^	67	12
+	.	67	11
+	+	37	2
+	+	38	20
+	+	47	47
+	+	48	1
+	+	58	1
+	+	37	1
+	+	58	29
+	+	57	45
+	+	58	31
+	+	69	0
+	+	32	33
+	+	27	29
+	+	32	29
+	+	32	77
+	+	40	29
+	+	32	32
+	+	27	23
+	+	29	0
+	+	29	40
+	+	32	21
+	+	29	41
+	+	29	40
+	+	32	29
+	+	32	76
+	+	32	29
+	+	34	37
+	+	39	2
+	+	54	31
+	+	50	30
+	+	58	60
+	+	59	32
+	+	57	28
+	+	29	40
+	+	50	65
+	+	57	29
+	+	44	12
+	+	40	30
+	+	70	0
+	+	57	30
+	+	18	2
+	+	17	2
+	+	15	30
+	+	20	43
+	+	70	0
+	+	40	29
+	+	50	23
+	+	52	1
+	+	51	16
+	+	66	18
+	+	53	8
+	+	54	5
+	+	65	0
+	+	55	0
+	+	57	4
+	+	58	4
+	+	53	1
+	+	54	1
+	+	55	1
+	+	57	1
+	+	58	1
+	+	59	6
+	+	65	1
+	+	55	33
+	+	59	2
+	+	57	5
+	+	58	5
+	+	59	2
+	+	59	33
+	+	60	0
+	+	55	33
+	+	61	6
+	+	62	3
+	+	63	42
+	+	28	16
+	+	43	18
+	+	30	7
+	+	31	2
+	+	42	1
+	+	32	4
+	+	34	4
+	+	35	3
+	+	36	4
+	+	37	3
+	+	38	4
+	+	39	3
+	+	40	4
+	+	32	33
+	+	33	3
+	+	41	2
+	+	34	5
+	+	35	5
+	+	36	5
+	+	37	5
+	+	38	6
+	+	39	5
+	+	40	5
+	+	44	11
+	+	20	35
+	+	68	0
+	+	67	11
+
+> /usr/src/kernels/linux-4.3.3/kernel/signal.c
+	"	2922	18
+	^	2922	19
+	.	2922	18
+	+	2899	0
+	+	2918	0
+	+	2911	41
+	+	2914	29
+	+	2917	30
+	+	2915	29
+	+	2915	29
+	+	2917	0
+	+	2911	29
+	+	2915	27
+	+	2914	33
+	+	2923	0
+	+	2918	1
+	+	2915	4
+	+	2917	4
+	+	2918	7
+	+	2919	36
+	+	2915	3
+	+	2907	22
+	+	2914	0
+	+	2901	0
+	+	2900	23
+	+	2911	0
+	+	2914	3
+	+	2916	32
+	+	2908	11
+	+	2923	1
+	+	2920	3
+	+	2919	4
+	+	2918	4
+	+	2917	5
+	+	2916	5
+	+	2915	5
+	+	2914	4
+	+	2911	4
+	+	2909	2
+	+	2910	17
+	+	2922	17
+	+	2912	7
+	+	2914	0
+	+	2913	0
+	+	2912	6
+	+	2913	2
+	+	2914	5
+	+	2915	6
+	+	2916	6
+	+	2917	6
+	+	2918	5
+	+	2919	6
+	+	2920	4
+	+	2921	2
+	+	2915	4
+	+	2922	18
 
 > /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall_64.tbl
-	"	334	29
-	^	334	30
-	.	334	30
-	+	334	30
+	"	336	44
+	^	336	45
+	.	336	44
+	+	334	38
+	+	335	46
+	+	336	44
+
+> /usr/src/kernels/linux-4.3.3/include/linux/sched.h
+	"	515	5
+	^	515	6
+	.	515	8
+	+	515	8
+
+> /usr/src/kernels/linux-4.3.3/arch/x86/entry/syscalls/syscall64.h
+	"	10	0
+	.	10	0
+	+	10	0
 
 > /usr/src/kernels/linux-4.3.3/kernel/sys.c
-	"	107	26
-	^	107	0
-	.	107	0
+	"	192	0
+	^	111	3
+	.	111	2
 	+	112	0
 	+	107	36
 	+	108	1
@@ -198,7 +434,67 @@
 	+	110	11
 	+	107	1
 	+	111	1
-	+	107	0
+	+	107	1
+	+	111	2
+
+> /usr/src/kernels/linux-4.3.3/stoogecalls/stoogecalls.
+	"	1	0
+
+> ~/lab6/user.c
+	"	16	1
+	^	22	68
+	.	22	67
+	+	8	35
+	+	12	37
+	+	18	12
+	+	21	14
+	+	25	7
+	+	12	17
+	+	21	2
+	+	18	0
+	+	21	3
+	+	24	3
+	+	25	0
+	+	21	10
+	+	9	17
+	+	10	21
+	+	19	8
+	+	21	19
+	+	22	41
+	+	11	20
+	+	19	9
+	+	20	25
+	+	21	28
+	+	20	14
+	+	21	28
+	+	22	0
+	+	20	15
+	+	22	56
+	+	11	12
+	+	23	0
+	+	22	71
+	+	11	9
+	+	13	17
+	+	16	1
+	+	15	14
+	+	13	8
+	+	22	48
+	+	14	13
+	+	15	12
+	+	17	0
+	+	22	67
+
+> /usr/src/kernels/linux-4.3.3/stoogecalls/Makefile
+	"	4	2
+	^	4	3
+	.	4	3
+	+	4	3
+
+> /usr/src/kernels/linux-4.3.3/Makefile
+	"	881	75
+	^	881	76
+	.	881	75
+	+	881	75
 
 > /usr/src/kernels/linux-4.3.3/include/linux/syscalls.h
 	"	889	0
