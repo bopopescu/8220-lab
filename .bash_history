@@ -1,247 +1,3 @@
-rm .bash_history 
-init 0
-vim
-yum install vim
-vim
-reboot
-cd /dev
-mknod kyouko3 500 127
-mknod --help
-mknod kyouko3 -m 500 127
-mknod kyouko3 c 500 127
-cd ~
-cd..
-exit
-mkdir lab1
-cd lab1/
-vim lab1.c
-ls
-cd lab1/
-ls
-vim lab1.c
-vim a
-cd lab1/
-vim lab1.c 
-cd /usr/src/linux/
-ls
-exit
-lspci grep 1234
-lspci grep | 1234
-lspci | grep 1234
-cd /dev/
-ls -all
-mknod -b 500 127
-mknod p 500 127
-mknod kyouko3 p
-mknod p 500 127
-ls -all
-rm kyouko3 
-mknod kyouko3 b 500 127
-rm kyouko3 
-mknod kyouko3 c 500 127
-cd ~
-ls
-cd lab1/
-ls
-cd ..
-cp lab1/* lab/*
-mkdir lab2
-cp lab1/* lab2/*
-cp -rf lab1/* lab2/*
-cp -rf lab1/* lab2/
-cd lab
-cd lab2
-ls
-vim mymod.c 
-cd ..
-ls
-cd lab2
-vim test.c
-cd lab2
-vim mymod.c 
-vnc 
-vnc titan3.cs.clemson.edu
-exit
-mkdir download
-cd download/
-wget http://files.cnblogs.com/ma6174/vimrc.zip
-yum install wget
-wget http://files.cnblogs.com/ma6174/vimrc.zip
-unzip vimrc.zip 
-cp .vimrc ~/
-cd ~
-ls
-ls -a
-cd lab2
-vim mymod.c 
-make
-cd /dev/
-ls -all
-mknod kyouko3 c 500 127
-cd ~
-cd lab2/
-/sbin/rmmod mymod
-cd ..
-git commit -m "1.22-ver"
-git add .
-git commit -m "1.22-ver"
-git push
-cd lab2
-/sbin/insmod mymod.ko 
-ls
-ls -all
-gcc test.c -o test
-./test 
-exit
-find log
-cd /
-find log
-cat /var/log/messages
-exit
-cd lab2
-ls
-vim mymod.c 
-ifconfig
- yum install tigervnc-server
-vncserver
-vncserver kill :1
-vncserver -kill :1
-yum -y install net-tools
-ifconfig
-vncserver
-clear
-ifconfig
-vim /usr/bin/vnc
-vnc 198.21.245.117
-exit
-ls
-cd download/
-wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
-tar xf noip-duc-linux.tar.gz 
-cd noip-
-cd noip-2.1.9-1/
-make install
-vncserver
-vncserver -kill :1
-vncserver -kill :2
-vncserver
-noip2 stop
-
-/usr/local/bin/noip2 
-ls
-ping 198.21.174.234
-/usr/local/bin/noip2 -C
-ps aux | grep noip2
-kill -s 15 7266
-/usr/local/bin/noip2 -C
-noip2 
-exit
-vnc imp4.cs.clemson.edu
-vim /usr/bin/vnc 
-vnc yitianl@imp4.cs.clemson.edu
-git push
-vnc yitian@198.21.174.234
-vnc yitian@172.23.6.170
-ping 172.18.0.1
-vnc yitian@yitian_li_93@yitianl.ddns.net
-vnc yitian@yitian_li_93@104.196.34.202
-cd download/
-wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
-tar -zxvf google-cloud-sdk.tar.gz 
-bash google-cloud-sdk/install.sh 
-gcloud auth login 
-reboot
-gcloud auth login
-gcloud config set project resume-for-me
-gcloud compute instances list
-vnc root@yitianl
-vnc yitian@yitian_li_93@yitianl.ddns.net
-ssh -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@yitianl.ddns.net
-ssh -i ~/.ssh/google_compute_engine.pub -R 19999:localhost:22 yitian_li_93@yitianl.ddns.net
-cat .ssh/google_compute_engine.pub 
-ssh -i ~/.ssh/google_compute_engine.pub -R 19999:localhost:22 yitian_li_93@yitianl.ddns.net
-ssh -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@yitianl.ddns.net
-ssh -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i .ssh/google_compute_engine 
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@transmitter
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-gcloud compute project-info add-metadata --metadata-from-file sshKeys=~/.ssh/google_compute_engine
-gcloud compute project-info add-metadata --metadata-from-file sshKeys=~/.ssh/google_compute_engine.pub
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-ssh -i ~/.ssh/google_compute_engine.pub yitian_li_93@104.196.34.202
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-gcloud compute project-info add-metadata --metadata-from-file sshKeys=~/.ssh/google_compute_engine
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-vim ~/.ssh/config
-~/.ssh/
-cd .ssh/
-ls
-vim ~/.ssh/config
-ssh -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-vim ~/.ssh/config
-ssh -v -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-vim ~/.ssh/config
-ssh -v -i ~/.ssh/google_compute_engine yitian_li_93@104.196.34.202
-ssh -v -i ~/.ssh/google_compute_engine.pub yitian_li_93@104.196.34.202
-ssh -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -f -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -v -i ~/.ssh/google_compute_engine -R 19999:localhost:22 yitian_li_93@104.196.34.202
-gcloud compute 
-gcloud compute ssh -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i 
-ssh -i ~/.ssh/google_compute_engine.pub yitian_li_93@104.196.34.202
-ssh-keygen
-gcloud compute project-info add-metadata --metadata-from-file sshkeys=~/.ssh/key4transmitter.pub
-ssh -i ~/.ssh/google_compute_engine.pub yitian_li_93@104.196.34.202
-ssh -v -i ~/.ssh/key4transmitter -R 19999:localhost:22 yitian_li_93@104.196.34.202
-scp ~/.ssh/key4transmitter.pub yitian_li_93@104.196.34.202:~/.ssh/uploaded_key.pub
-ssh -v -i ~/.ssh/key4transmitter -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh-keygen
-ssh-keygen -f yitian_li_93
-ls
-gcloud compute project-info add-metadata --metadata-from-file sshkeys=~/.ssh/yitian_li_93.pub
-ssh-keygen -f root
-gcloud compute project-info add-metadata --metadata-from-file sshkeys=~/.ssh/root.pub
-ssh -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i yitian_li_93.pub -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i yitian_li_93 -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i root -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-gcloud compute project-info add-metadata --metadata-from-file sshkeys=~/.ssh/yitian_li_93.pub
-ssh -i yitian_li_93 -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i yitian_li_93.public -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i yitian_li_93.pub -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-cat root
-cat root.pub 
-cat yitian_li_93.pub 
-ssh -i yitian_li_93.pub -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ssh -i yitian_li_93 -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-/etc/init.d/ssh restart
-yum get-install sshserver
-yum install ssh
-yum install sshserver
-reboot
-gcloud compute ssh transmitter
-ssh -i .ssh/google_compute_engine -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-gcloud compute ssh transmitter
-ps aux |grep ssh
-kill 1451
-ps aux |grep ssh
-ssh -i .ssh/google_compute_engine -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-ping 104.196.34.202
-ssh -i .ssh/google_compute_engine -v -R 19999:l
-vnc yitianl@imp4.cs.clemson.edu
-vnc yitian@198.21.172.79
-vim /usr/bin/vnc
-vnc yitian@198.21.172.79
-vim .ssh/config 
-rm .ssh/config 
-vnc yitian@198.21.172.79
-/etc/init.d/ssh restart
 /etc/init.d/
 reboot
 vim /usr/bin/vnc
@@ -996,3 +752,249 @@ exit
 vnc4transmitter 
 reboot
 exit
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c 
+make bzImage -j 2
+make modules
+cd Project2/
+ls
+cd lab2
+ls
+vim user.c 
+gcc user.c -o user
+vim user.c 
+gcc user.c -o user
+./user 
+gcc user.c -o user
+./user 
+gcc user.c -o user
+./user 
+gcc user.c -o user
+./user 
+gcc user.c -o user
+./user 
+cd ..
+git add .
+git add -A
+git commit -m "project2lab2"
+git push
+cd Project2/lab2
+ls
+gcc user.c -o user
+./user 
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+vim ~/Project2/lab2/user.c 
+exit
+cd /usr/src/linux/
+make modules_install
+make install
+reboot
+vnc4transmitter 
+cd Project2/lab2/
+ls
+./user 
+cd /usr/src/linux/
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab2
+vim user.c 
+cd /usr/src/linux/
+ls
+vim stoogecalls/stoogecalls.c
+vim kernel/signal.c
+mv * Project1
+mkdir Project1
+mv * Project1
+ls
+mv Project1/Project2/ ./
+ls
+cd Project2
+ls
+cd la2
+cd lab2/
+ls
+gcc user.c -o user
+./user 
+vnc4transmitter 
+cd Project2/lab2/
+./user 
+cd /usr/src/linux/
+vim kernel/signal.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab2/
+ls
+vnc4transmitter 
+cd Project2/lab2/
+./user 
+cd /usr/src/linux/
+vim kernel/signal.c
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab2/
+vim user.c 
+cd /usr/src/linux/
+vim  stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab2
+./user 
+vim user.c 
+vnc4transmitter 
+cd Project2/lab2/
+ls
+./user 
+exit
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install -j 2
+make install -j 2
+reboot
+cd Project2/lab2
+./user 
+cat /var/log/messages
+./user 
+exit
+cd Project2/lab2/
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules -j 2
+make modules_install -j 2
+make install -j 2
+reboot
+vnc4transmitter 
+cd Project2/lab2/
+./user 
+cat /var/log/dmesg
+demsg
+dmesg
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.
+vim stoogecalls/stoogecalls.c 
+vim /usr/src/linux/
+cd /usr/src/linux/
+vim kernel/signal.c
+vim ~/Project2/lab2/user.c 
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c 
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab3
+cd Project2/
+mkdir lab3
+cd lab3/
+vim user.c
+vim zoombie.c
+vnc4transmitter 
+cd Project2/lab3/
+ls
+gcc user.c -o user
+./user &
+ps -ea
+ps -ea |grep user
+./user &
+cd ..
+cd lab2/
+ls
+./user 
+cd ..
+cd lab3/
+ls
+./user &
+cd /usr/src/linux/
+vim stoogecalls/stoogecalls.c
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+cd Project2/lab2/
+ls
+cat user.c 
+cd ..
+cd lab3/
+exit
+cd Project2/lab3/
+ls
+./user 
+./user &
+vim user.c 
+gcc user.c -o user
+./user &
+vim user.c 
+gcc user.c -o user
+./user &
+ps -ea |grep user
+kill 8702
+ps -ea |grep user
+ls
+gcc zoombie.c -o zoombie
+./zoombie &
+ps aux | grep zoombie
+ps aux | grep user
+kill 8702
+ps aux | grep user
+ps aux | grep zoombie
+ps aux | grep user
+kill 8702
+kill -9 8702
+ps aux | grep user
+ps aux | grep zoombie
+vnc4transmitter 
+ps aux | grep zoombie
+ps aux | grep user
+./user &
+ps aux | grep user
+ps -ea | grep user
+reboot
