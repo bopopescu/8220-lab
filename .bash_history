@@ -1,51 +1,3 @@
-/etc/init.d/
-reboot
-vim /usr/bin/vnc
-exit
-yum update
-yum install tigervncserver
-yum install tightvncserver
-yum install xfce4
-yum install xfce
-yum install tigervnc-server
-mkdir lab3 && cp lab2/*.* lab3
-cd lab3/
-ls
-vim mymod.c 
-cd lab3
-vim mymod.c 
-exit
-cd lab3
-vim mymod.
-vim mymod.c 
-cd lab3
-vim mymod.c
-vim lab3/mymod.c
-exit
-vim lab3/mymod.c
-vim lab3/mymod.c 
-ssh -i yitian_li_93 -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-gcloud compute ssh transmitter
-ssh -i yitian_li_93 -v -R 19999:localhost:22 yitian_li_93@104.196.34.202
-exit
-vim lab3/mymod.c
-vim .vimrc 
-mv .vimrc .vimrc-bak
-vim lab3/mymod.c
-exit
-vim lab3/mymod.
-vim lab3/mymod.c 
-git comment -m "before lab3"
-git commit -m "before lab3"
-mv .vimrc-bak .vimrc
-git commit -a
-git commit -m "update before lab3"
-git add .
-git commit -m "update before lab3"
-git push
-exit
-cd lab3
-make
 ls
 cd ..
 cd lab2
@@ -998,3 +950,51 @@ ps aux | grep user
 ps aux | grep user
 ps -ea | grep user
 reboot
+ls
+cp /usr/src/linux/.config ~/Project2/
+cd Project2/
+cd ..
+git add .
+git  add --all .
+git commit -m "config"
+git push
+vim .bashrc
+exit
+ls
+cd Project2/
+ls
+mkdir lab4
+ls
+exit
+cd Project2/
+cd lab4
+cd /usr/src/linux/
+ls
+cd kernel/
+ls
+cd ..
+cd stoogecalls/
+ls
+vim Makefile 
+vim smunch.c
+cd ..
+vim arch/x86/entry/syscalls/syscall_64.tbl 
+exit
+cd /usr/src/linux/
+make -j2
+vim kernel/signal.c 
+make bzImage -j 2
+vim kernel/signal.c 
+make bzImage -j 2
+vim kernel/signal.c 
+make bzImage -j 2
+make modules
+make modules_install
+make install
+reboot
+ser.c 
+cd  lab4/
+ls
+make
+make user
+vnc4transmitter 

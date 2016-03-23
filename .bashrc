@@ -12,7 +12,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/root/download/google-cloud-sdk/path.bash.inc'
+#source '/root/download/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/root/download/google-cloud-sdk/completion.bash.inc'
+#source '/root/download/google-cloud-sdk/completion.bash.inc'
