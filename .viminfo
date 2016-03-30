@@ -11,9 +11,9 @@
 ~MSle0~/sending pid
 
 # Command Line History (newest to oldest):
+:q
 :wq
 :w
-:q
 :Wq
 :qwe:Wq:
 :ew
@@ -146,18 +146,22 @@
 # global variables:
 
 # File marks:
-'0  2272  3  ~/Project2/lab4/signal.c
-'1  146  0  ~/Project3/lab1/mptrace
-'2  145  0  ~/Project3/lab1/mptrace
-'3  145  29  ~/Project3/lab1/mptrace
-'4  145  0  ~/Project3/lab1/mptrace
-'5  113  36  ~/Project3/lab1/mptrace
-'6  37  29  /etc/grub.d/40_custom
-'7  78  21  /boot/grub2/grub.cfg
-'8  32  18  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
-'9  33  0  ~/Project3/lab1/mptrace
+'0  31  1  ~/Project2/lab5/kernel-smunch-v3.0.c
+'1  18  0  ~/Project2/lab5/smunch.c
+'2  32  3  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
+'3  2272  3  ~/Project2/lab4/signal.c
+'4  146  0  ~/Project3/lab1/mptrace
+'5  145  0  ~/Project3/lab1/mptrace
+'6  145  29  ~/Project3/lab1/mptrace
+'7  145  0  ~/Project3/lab1/mptrace
+'8  113  36  ~/Project3/lab1/mptrace
+'9  37  29  /etc/grub.d/40_custom
 
 # Jumplist (newest first):
+-'  31  1  ~/Project2/lab5/kernel-smunch-v3.0.c
+-'  1  0  ~/Project2/lab5/kernel-smunch-v3.0.c
+-'  18  0  ~/Project2/lab5/smunch.c
+-'  32  3  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
 -'  2272  3  ~/Project2/lab4/signal.c
 -'  366  0  ~/Project2/lab4/signal.c
 -'  1  0  ~/Project2/lab4/signal.c
@@ -172,7 +176,6 @@
 -'  78  21  /boot/grub2/grub.cfg
 -'  72  0  /boot/grub2/grub.cfg
 -'  1  0  /boot/grub2/grub.cfg
--'  32  18  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
 -'  1  0  ~/Project3/lab1/mptrace
 -'  35  0  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
 -'  1  0  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
@@ -184,7 +187,6 @@
 -'  12  27  ~/Project2/lab3/user.c
 -'  14  62  ~/Project2/lab2/user.c
 -'  17  0  ~/Project2/lab2/user.c
--'  18  0  ~/Project2/lab5/smunch.c
 -'  9  36  ~/Project2/lab5/smunch.c
 -'  1  0  ~/Project2/lab5/smunch
 -'  23  0  ~/Project2/lab5/zoombie.c
@@ -246,8 +248,6 @@
 -'  12  27  ~/Project2/lab3/user.c
 -'  14  62  ~/Project2/lab2/user.c
 -'  17  0  ~/Project2/lab2/user.c
--'  18  0  ~/Project2/lab5/smunch.c
--'  9  36  ~/Project2/lab5/smunch.c
 -'  1  0  ~/Project2/lab5/smunch
 -'  23  0  ~/Project2/lab5/zoombie.c
 -'  12  30  ~/Project2/lab5/user.c
@@ -255,10 +255,36 @@
 -'  188  0  ~/Project3/lab1/mptrace
 -'  148  0  ~/Project3/lab1/mptrace
 -'  189  0  ~/Project3/lab1/mptrace
--'  146  0  ~/Project3/lab1/mptrace
--'  145  0  ~/Project3/lab1/mptrace
+-'  18  0  ~/Project2/lab5/smunch.c
+-'  32  3  /usr/src/kernels/linux-4.3.3/smunch/smunch.c
 
 # History of marks within files (newest to oldest):
+
+> ~/Project2/lab5/kernel-smunch-v3.0.c
+	"	31	1
+
+> ~/Project2/lab5/smunch.c
+	"	18	0
+	^	9	37
+	.	9	36
+	+	9	36
+
+> /usr/src/kernels/linux-4.3.3/smunch/smunch.c
+	"	32	3
+	.	32	0
+	+	23	48
+	+	25	49
+	+	32	69
+	+	32	4
+	+	32	7
+	+	32	66
+	+	32	14
+	+	32	0
+	+	36	0
+	+	32	4
+	+	32	0
+	+	32	0
+	+	32	0
 
 > ~/Project2/lab4/signal.c
 	"	2272	3
@@ -404,23 +430,6 @@
 	+	72	0
 	+	72	0
 
-> /usr/src/kernels/linux-4.3.3/smunch/smunch.c
-	"	32	18
-	.	32	0
-	+	23	48
-	+	25	49
-	+	32	69
-	+	32	4
-	+	32	7
-	+	32	66
-	+	32	14
-	+	32	0
-	+	36	0
-	+	32	4
-	+	32	0
-	+	32	0
-	+	32	0
-
 > /usr/src/kernels/linux-4.3.3/stoogecalls/Makefile
 	"	5	0
 	^	5	0
@@ -553,12 +562,6 @@
 	+	23	13
 	+	22	2
 	+	14	62
-
-> ~/Project2/lab5/smunch.c
-	"	18	0
-	^	9	37
-	.	9	36
-	+	9	36
 
 > ~/Project2/lab5/smunch
 	"	1	0
