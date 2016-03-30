@@ -11,6 +11,8 @@
 #include<sys/signal.h>
 #include<time.h>
 
+//#insert /usr/src/linux/arch/x86/entry/syscalls/syscall_64.tbl
+
 #define My_SysCall(arg) syscall(325,arg)
 #define init(arg)		syscall(326,arg)
 #define get(arg)		syscall(327,arg)

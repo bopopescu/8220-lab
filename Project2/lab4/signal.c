@@ -2264,13 +2264,13 @@ relock:
 		if (ka->sa.sa_handler != SIG_DFL) {
 			/* Run the handler.  */
 			ksig->ka = *ka;
-			
-			printk(KERN_ALERT "Sending pid:%d\nSending User id:%d\nTarget pid:%d",
+			if (ksig->info.si_signo==SIGUSR1){
+				printk(KERN_ALERT "Sending pid:%d\nSending User id:%d\nTarget pid:%d",
 					ksig->info._sifields._kill._pid,
 					ksig->info._sifields._kill._uid,
 					current->tgid
-					);
-
+				);
+			}
 			if (ka->sa.sa_flags & SA_ONESHOT)
 				ka->sa.sa_handler = SIG_DFL;
 		

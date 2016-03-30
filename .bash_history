@@ -1,171 +1,3 @@
-ls
-cd ..
-cd lab2
-ls
-cd ..
-cp lab2/Makefile lab3/
-cd lab3/
-ls
-make
-vim mymod.c
-make
-vim mymod.c
-vim register.h
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-cd lab3
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-git commit -m "in the lab"
-git add .
-git commit -m "in the lab"
-git push
-git commit -m "in the lab"
-git pull
-ls
-make
-cd /dev/
-ls
-ls -all
-mknod -m 666 kyouko3 c 500 127
-cd ~
-cd lab3
-ls
-vim user.c
-make user
-./user 
-vim ~/.vimrc 
-vim user.c
-make user
-vim user.c
-make user
-./user 
-vim user.c
-make user.c
-make user
-./user 
-vim user.c
-make user
-./user 
-vim user.c
-make user
-./user 
-vim user.c
-insmod mymod.ko 
-./user 
-vim user.c
-make user
-vim user.c
-vim mymod.c 
-make user
-exit
-ls
-cd lab3
-make
-vim mymod.c 
-make
-rmmod mymod
-insmod mymod.ko 
-./user 
-exit
-vim lab3/mymod.c
-make
-cd lab3/
-make
-exit
-vnc4transmitter 
-vim lab3/mymod.c
-cd lab3
-ls
-make
-kyouko3_make 
-insmod mymod
-insmod mymod.ko 
-./user 
-vim user.c
-make user
-./user 
-vim mymod.c
-make
-rmmod mymod
-insmod mymod.ko 
-ls
-./user 
-vim mymod.c
-./user 
-vim mymod.c
-make
-rmmod mymod
-insmod mymod.ko 
-./user 
-vim mymod.c
-make
-vim mymod.c
-make
-rmmod mymod
-insmod mymod.ko 
-./user 
-vim mymod.c
-make
-rmmod mymod
-insmod mymod.ko 
-./user 
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-make
-vim mymod.c
-touch err
-make >err
-cat err 
-vim err
-make >err
-vnc4transmitter 
-./user 
-vim mymod.c
-make
-rmmod mymod
-insmod mymod.ko 
-./user 
-vim user.c 
-cd ..
-git add .
-git commit -m "aftermath"
-git push
-vnc4transmitter 
-cd lab3
-rmmod mymod
-insmod mymod.ko 
-./user 
 git add .
 git commit -m "before class2"
 git push
@@ -998,3 +830,171 @@ ls
 make
 make user
 vnc4transmitter 
+cd Project2/lab4/
+cd ..
+git add .
+git commit -m "lab9"
+git push
+cd /usr/src/linux/kernel/signal.c Project2/lab4/signal.c
+cp /usr/src/linux/kernel/signal.c Project2/lab4/signal.c
+git add .
+git commit -m "lab9-finish"
+git push
+cd Project2/lab4/
+./user 
+cd Project2/
+cd lab4/
+cat /usr/bin/vnc4transmitter 
+./user 
+vim /usr/src/linux/kernel/signal.c 
+vim /usr/src/linux/kernel/signal.c
+cd /usr/src/linux/
+vim kernel/signal.c 
+exit
+git pull
+cd Project2/lab5/
+ls
+cp kernel-smunch-v2.0.c /usr/src/linux/stoogecalls/smunch.c 
+cat /usr/src/linux/stoogecalls/smunch.c 
+cp kernel-smunch-v2.0.c /usr/src/linux/stoogecalls/smunch.c 
+ls
+vim /usr/src/linux/stoogecalls/Makefile 
+vim smunch.c 
+vim /usr/src/linux/arch/x86/entry/syscalls/syscall_64.tbl 
+vim smunch.c 
+vim user.c 
+ls -all
+vim zoombie.c 
+cd /usr/src/linux/
+make bzImage -j2
+cd /usr/src/linux/
+make modules
+make modules_install install
+reboot
+cd Project2/lab5/
+ls
+./user &
+vim user.c 
+make user
+make smunch
+./user &
+./zoombie 
+cd /usr/src/linux/
+mkdir smunch
+mv stoogecalls/smunch.* smunch/
+cd Project2/lab5
+./smunch 8734 256
+./smunch 8736 256
+ps aux |grep zoombie
+vim user.c 
+vim zoombie.c 
+vim smunch
+vim smunch.c 
+cd ..
+cd lab2
+ls
+vim user.c 
+cd ..
+cd lab3/
+cd ..
+cd lab2/
+make user
+cd ..
+cd lab3/
+ls
+cd ..
+cd lab4/
+ls
+cd ..
+cd lab3/
+vim  user.c 
+cd ..
+cd lab4/
+ls
+vim user.c 
+vim /usr/src/linux/stoogecalls/Makefile 
+cd /usr/src/linux/
+vim arch/x86/entry/syscalls/syscall_64.tbl 
+cd ..
+cd linux/
+make bzImage -j2
+vim Makefile
+vim stoogecalls/Makefile 
+vim smunch/Makefile
+make bzImage -j2
+make modules
+make modules_install
+make install
+vim smunch/smunch.c 
+make bzImage -j2
+vim smunch/smunch.c 
+cp /etc/grub.d/40_custom /etc/grub.d/40_custom.bak
+vim /etc/grub.d/40_custom
+git pull
+cd Project2/lab5/
+ls
+./user &
+./smunch 32697 256
+cd ..
+mkdir Project3
+cd Project3/
+mkdir lab1
+cd lab1/
+wget https://people.cs.clemson.edu/~geist/class_data/822_randread.c
+wget https://people.cs.clemson.edu/~geist/class_data/822_mptrace
+ls
+gcc 822_randread.c -o 822_randread
+./822_randread 
+chmod u+x 822_mptrace 
+./822_mptrace 
+mv 822_randread.c randread.c
+ls -all
+rm 822_mptrace 
+rm 822_randread 
+rm out.*
+y
+ls
+ls -all
+wget https://people.cs.clemson.edu/~geist/class_data/822_mptrace
+mv 822_mptrace mptrace
+chmod u+x mptrace 
+make randread.c 
+make randread
+./mptrace 
+ls
+vim mptrace 
+PATH=$PATH:./
+echo $PATH
+PATH=$PATH:~/Project3/lab1/
+vim mptrace 
+./mptrace 
+vim /boot/grub2/grub.cfg 
+cat /boot/grub2/grub.cfg 
+vim /etc/grub.d/40_custom
+grub2-mkconfig -o /boot/grub2/grub.cfg 
+reboot
+vnc4transmitter 
+cd Project3/lab1/
+ls
+vim mptrace 
+PATH=$PATH:~/Project3/lab1/
+./mptrace 
+vim mptrace 
+./mptrace 
+vim mptrace 
+./mptrace 
+vim mptrace 
+./mptrace 
+vim mptrace 
+./mptrace 
+vim mptrace 
+./mptrace 
+reboot
+vnc
+lyt-0504
+vnc4transmitter 
+cd Project3/lab1/1
+cd Project3/lab1/
+PATH=$PATH:~/Project3/lab1/
+./mptrace 
+reboot

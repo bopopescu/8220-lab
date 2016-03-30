@@ -1,0 +1,856 @@
+
+---> Processing directory / 
+416d  . 
+416d  .. 
+416d  boot 
+41ed  dev 
+
+---> Processing directory /dev 
+41ed  . 
+416d  .. 
+21b0  vcsa5 
+21b0  vcs5 
+21b0  vcsa4 
+21b0  vcs4 
+21b0  vcsa3 
+21b0  vcs3 
+21b0  vcsa2 
+21b0  vcs2 
+21b0  vcsa6 
+21b0  vcs6 
+a1ff  cdrom 
+21b0  sg1 
+21b0  sg0 
+43ff  mqueue 
+a1ff  initctl 
+41ed  hugepages 
+
+---> Processing directory /dev/hugepages 
+41ed  . 
+41ed  .. 
+61b0  dm-1 
+41ed  centos_cpsc822 
+
+---> Processing directory /dev/centos_cpsc822 
+41ed  . 
+41ed  .. 
+a1ff  root 
+a1ff  swap 
+61b0  dm-0 
+41ed  disk 
+
+---> Processing directory /dev/disk 
+41ed  . 
+41ed  .. 
+41ed  by-uuid 
+41ed  by-path 
+
+---> Processing directory /dev/disk/by-path 
+41ed  . 
+41ed  .. 
+a1ff  pci-0000:00:01.1-ata-1.0-part2 
+a1ff  pci-0000:00:01.1-ata-1.0-part1 
+a1ff  pci-0000:00:01.1-ata-1.0 
+a1ff  pci-0000:00:01.1-ata-2.0 
+41ed  by-id 
+41ed  block 
+61b0  sr0 
+61b0  sda2 
+61b0  sda1 
+61b0  sda 
+41ed  bsg 
+41ed  virtio-ports 
+
+---> Processing directory /dev/virtio-ports 
+41ed  . 
+41ed  .. 
+a1ff  com.redhat.rhevm.vdsm 
+a1ff  org.qemu.guest_agent.0 
+2180  vport2p2 
+2180  vport2p1 
+a1ff  rtc 
+41ed  char 
+2180  hidraw0 
+41ed  mapper 
+c1b6  log 
+a1ff  stderr 
+a1ff  stdout 
+a1ff  stdin 
+a1ff  fd 
+a1ff  core 
+41ed  pts 
+43ff  shm 
+2180  memory_bandwidth 
+2180  network_throughput 
+2180  network_latency 
+2180  cpu_dma_latency 
+2180  mcelog 
+2180  rtc0 
+41ed  input 
+41ed  bus 
+
+---> Processing directory /dev/bus 
+41ed  . 
+41ed  .. 
+41ed  usb 
+2180  usbmon1 
+2180  usbmon0 
+2180  hwrng 
+2180  nvram 
+2180  hpet 
+41ed  raw 
+21b0  ttyS3 
+21b0  ttyS2 
+21b0  ttyS1 
+21b0  ttyS0 
+21b6  ptmx 
+2180  autofs 
+2180  snapshot 
+41ed  cpu 
+2190  tty63 
+2190  tty62 
+2190  tty61 
+2190  tty60 
+2190  tty59 
+2190  tty58 
+2190  tty57 
+2190  tty56 
+2190  tty55 
+2190  tty54 
+2190  tty53 
+2190  tty52 
+2190  tty51 
+2190  tty50 
+2190  tty49 
+2190  tty48 
+2190  tty47 
+2190  tty46 
+2190  tty45 
+2190  tty44 
+2190  tty43 
+2190  tty42 
+2190  tty41 
+2190  tty40 
+2190  tty39 
+2190  tty38 
+2190  tty37 
+2190  tty36 
+2190  tty35 
+2190  tty34 
+2190  tty33 
+2190  tty32 
+2190  tty31 
+2190  tty30 
+2190  tty29 
+2190  tty28 
+2190  tty27 
+2190  tty26 
+2190  tty25 
+2190  tty24 
+2190  tty23 
+2190  tty22 
+2190  tty21 
+2190  tty20 
+2190  tty19 
+2190  tty18 
+2190  tty17 
+2190  tty16 
+2190  tty15 
+2190  tty14 
+2190  tty13 
+2190  tty12 
+2190  tty11 
+2190  tty10 
+2190  tty9 
+2190  tty8 
+2190  tty7 
+2190  tty6 
+2190  tty5 
+2190  tty4 
+2190  tty3 
+2190  tty2 
+2190  tty1 
+21b0  vcsa1 
+21b0  vcs1 
+21b0  vcsa 
+21b0  vcs 
+2190  tty0 
+2180  console 
+21b6  tty 
+21a4  kmsg 
+21b6  urandom 
+21b6  random 
+21b6  full 
+21b6  zero 
+21a0  port 
+21b6  null 
+21a0  mem 
+2180  vga_arbiter 
+416d  proc 
+
+---> Processing directory /proc 
+41ed  run 
+
+---> Processing directory /run 
+41ed  . 
+416d  .. 
+81a4  sshd.pid 
+81a4  dhclient-eth0.pid 
+41ed  NetworkManager 
+8180  xtables.lock 
+  xtables.lock        1 
+8180  syslogd.pid 
+81a4  acpid.pid 
+8000  cron.reboot 
+c1b6  acpid.socket 
+81a4  crond.pid 
+  crond.pid        2 
+41ed  avahi-daemon 
+41ed  dbus 
+
+---> Processing directory /run/dbus 
+41ed  . 
+41ed  .. 
+c1b6  system_bus_socket 
+81a4  auditd.pid 
+  auditd.pid        2 
+41ed  sepermit 
+41ed  user 
+
+---> Processing directory /run/user 
+41ed  . 
+41ed  .. 
+41c0  0 
+41c0  svnserve 
+41ed  console 
+
+---> Processing directory /run/console 
+41ed  . 
+41ed  .. 
+41ed  ppp 
+41ed  faillock 
+41ed  setrans 
+41ed  tuned 
+
+---> Processing directory /run/tuned 
+41ed  . 
+41ed  .. 
+81a4  tuned.pid 
+81b4  utmp 
+  utmp        5 
+41fd  netreport 
+81a4  lvmetad.pid 
+  lvmetad.pid        2 
+41c0  lvm 
+1180  dmeventd-client 
+1180  dmeventd-server 
+41ed  plymouth 
+
+---> Processing directory /run/plymouth 
+41ed  . 
+41ed  .. 
+41ed  tmpfiles.d 
+
+---> Processing directory /run/tmpfiles.d 
+41ed  . 
+41ed  .. 
+81a4  kmod.conf 
+41ed  udev 
+41ed  mount 
+
+---> Processing directory /run/mount 
+41ed  . 
+41ed  .. 
+81a4  utab 
+41ed  log 
+41ed  lock 
+41ed  initramfs 
+41ed  systemd 
+416d  sys 
+
+---> Processing directory /sys 
+416d  . 
+416d  .. 
+41ed  fs 
+
+---> Processing directory /sys/fs 
+41ed  . 
+416d  .. 
+41ed  xfs 
+41ed  selinux 
+41ed  cgroup 
+41ed  pstore 
+41ed  bus 
+41ed  dev 
+41ed  devices 
+41ed  block 
+
+---> Processing directory /sys/block 
+41ed  . 
+416d  .. 
+a1ff  sda 
+a1ff  sr0 
+a1ff  dm-0 
+a1ff  dm-1 
+41ed  class 
+41ed  power 
+
+---> Processing directory /sys/power 
+41ed  . 
+416d  .. 
+81a4  reserved_size 
+  reserved_size        2 
+81a4  disk 
+  disk        2 
+81a4  image_size 
+81a4  state 
+  state        2 
+81a4  pm_freeze_timeout 
+81a4  resume 
+81a4  wakeup_count 
+81a4  pm_async 
+41ed  firmware 
+41ed  kernel 
+41ed  module 
+41ed  hypervisor 
+
+---> Processing directory /sys/hypervisor 
+41ed  . 
+416d  .. 
+41ed  etc 
+
+---> Processing directory /etc 
+41ed  . 
+416d  .. 
+81a4  fstab 
+  fstab        2 
+8180  crypttab 
+a1ff  mtab 
+41ed  pki 
+41ed  rpm 
+41ed  yum.repos.d 
+41ed  ssh 
+a1ff  grub2.cfg 
+81a4  centos-release 
+  centos-release        2 
+41ed  tmpfiles.d 
+81a4  issue 
+  issue        2 
+a1ff  rc.local 
+81a4  issue.net 
+41ed  systemd 
+81a4  os-release 
+81a4  DIR_COLORS.256color 
+  DIR_COLORS.256color       13 
+a1ff  redhat-release 
+41ed  rsyslog.d 
+
+---> Processing directory /etc/rsyslog.d 
+41ed  . 
+41ed  .. 
+81a4  listen.conf 
+41ed  acpi 
+
+---> Processing directory /etc/acpi 
+41ed  . 
+41ed  .. 
+41ed  actions 
+41ed  events 
+a1ff  system-release 
+41ed  dbus-1 
+
+---> Processing directory /etc/dbus-1 
+41ed  . 
+41ed  .. 
+41ed  system.d 
+81a4  session.conf 
+41ed  session.d 
+
+---> Processing directory /etc/dbus-1/session.d 
+41ed  . 
+41ed  .. 
+81a4  system.conf 
+  system.conf        7 
+81a4  vimrc 
+81a4  system-release-cpe 
+  system-release-cpe        2 
+41ed  udev 
+
+---> Processing directory /etc/udev 
+41ed  . 
+41ed  .. 
+41ed  rules.d 
+81a4  udev.conf 
+8124  hwdb.bin 
+81a4  drirc 
+  drirc       10 
+81a4  aliases 
+  aliases        4 
+8124  machine-id 
+81a4  bashrc 
+41ed  cron.monthly 
+
+---> Processing directory /etc/cron.monthly 
+41ed  . 
+41ed  .. 
+81a4  csh.cshrc 
+81a4  nsswitch.conf.bak 
+81a4  csh.login 
+41ed  cron.hourly 
+81a4  environment 
+  environment        1 
+41ed  cron.weekly 
+81a4  exports 
+  exports        1 
+8180  anacrontab 
+81a4  filesystems 
+81a4  crontab 
+81a4  group 
+8000  shadow- 
+  shadow-        3 
+8000  gshadow 
+41ed  polkit-1 
+81a4  host.conf 
+41ed  iproute2 
+81a4  hosts 
+  hosts        2 
+41ed  cron.d 
+
+---> Processing directory /etc/cron.d 
+41ed  . 
+41ed  .. 
+81a4  0hourly 
+81a4  hosts.allow 
+8180  cron.deny 
+81a4  hosts.deny 
+41c0  grub.d 
+81a4  inputrc 
+41ed  kernel 
+81a4  motd 
+  motd        1 
+41ed  wpa_supplicant 
+81a4  passwd 
+81a4  dnsmasq.conf 
+  dnsmasq.conf       51 
+81a4  printcap 
+41ed  dnsmasq.d 
+
+---> Processing directory /etc/dnsmasq.d 
+41ed  . 
+41ed  .. 
+81a4  profile 
+41ed  profile.d 
+81a4  rsyncd.conf 
+81a4  protocols 
+81a4  ethertypes 
+8180  securetty 
+41ed  ppp 
+81a4  services 
+81a4  dracut.conf 
+8000  shadow 
+  shadow        3 
+41ed  dracut.conf.d 
+81a4  shells 
+41ed  X11 
+41ed  bash_completion.d 
+
+---> Processing directory /etc/bash_completion.d 
+41ed  . 
+41ed  .. 
+81a4  git 
+81a4  yum 
+a1ff  yummain.py 
+81a4  iprutils 
+41ed  opt 
+41ed  pm 
+
+---> Processing directory /etc/pm 
+41ed  . 
+41ed  .. 
+41ed  config.d 
+41ed  power.d 
+41ed  sleep.d 
+
+---> Processing directory /etc/pm/sleep.d 
+41ed  . 
+41ed  .. 
+41ed  skel 
+
+---> Processing directory /etc/skel 
+41ed  . 
+41ed  .. 
+81a4  .bash_logout 
+81a4  .bash_profile 
+81a4  .bashrc 
+41ed  sysconfig 
+
+---> Processing directory /etc/sysconfig 
+41ed  . 
+41ed  .. 
+a1ff  selinux 
+81a4  rdisc 
+81a4  run-parts 
+8180  crond 
+a1ff  grub 
+81a4  wpa_supplicant 
+81a4  rsyncd 
+8180  ebtables-config 
+8180  ip6tables-config 
+8180  iptables-config 
+41ed  cbq 
+41ed  console 
+81a4  init 
+  init        3 
+41ed  modules 
+81a4  netconsole 
+41ed  network-scripts 
+81a4  readonly-root 
+81a4  rsyslog 
+81a4  kdump 
+  kdump        4 
+81a4  firewalld 
+  firewalld        2 
+81a4  svnserve 
+81a4  irqbalance 
+81a0  sshd 
+  sshd        2 
+81a4  man-db 
+81a4  cpupower 
+  cpupower        2 
+81a4  kernel 
+81a4  authconfig 
+  authconfig        2 
+81a4  network 
+  network        2 
+81a4  acpid 
+  acpid        2 
+81a4  vncservers 
+41ed  xdg 
+
+---> Processing directory /etc/xdg 
+41ed  . 
+41ed  .. 
+41ed  autostart 
+41ed  systemd 
+
+---> Processing directory /etc/xdg/systemd 
+41ed  . 
+41ed  .. 
+a1ff  user 
+41ed  xinetd.d 
+
+---> Processing directory /etc/xinetd.d 
+41ed  . 
+41ed  .. 
+41ed  terminfo 
+41ed  default 
+41ed  NetworkManager 
+81a4  ld.so.conf 
+  ld.so.conf        2 
+41ed  ld.so.conf.d 
+41ed  yum 
+81a4  nsswitch.conf 
+81a4  passwd- 
+  passwd-        3 
+41ed  lvm 
+
+---> Processing directory /etc/lvm 
+41ed  . 
+41ed  .. 
+41c0  archive 
+41c0  backup 
+41c0  cache 
+81a4  lvm.conf 
+41ed  profile 
+81a4  lvmlocal.conf 
+81a4  rpc 
+41e8  audit 
+
+---> Processing directory /etc/audit 
+41e8  . 
+41ed  .. 
+81a0  auditd.conf 
+41e8  rules.d 
+81a0  audit.rules 
+81a0  audit.rules.prev 
+81a4  ld.so.cache 
+41ed  popt.d 
+
+---> Processing directory /etc/popt.d 
+41ed  . 
+41ed  .. 
+41ed  binfmt.d 
+81a0  libaudit.conf 
+41ed  alternatives 
+
+---> Processing directory /etc/alternatives 
+41ed  . 
+41ed  .. 
+a1ff  mta 
+a1ff  mta-mailq 
+a1ff  mta-newaliases 
+a1ff  mta-pam 
+a1ff  mta-rmail 
+a1ff  mta-sendmail 
+a1ff  mta-mailqman 
+a1ff  mta-newaliasesman 
+a1ff  mta-sendmailman 
+a1ff  mta-aliasesman 
+a1ff  ld 
+a1ff  libnssckbi.so.x86_64 
+41ed  chkconfig.d 
+81a4  inittab 
+  inittab        2 
+a1ff  init.d 
+41ed  rc.d 
+81a4  adjtime 
+a1ff  rc0.d 
+81a4  networks 
+  networks        2 
+a1ff  rc1.d 
+81a4  rwtab 
+a1ff  rc2.d 
+41ed  gnupg 
+a1ff  rc3.d 
+41ed  rwtab.d 
+a1ff  rc4.d 
+81a4  statetab 
+a1ff  rc5.d 
+41ed  statetab.d 
+
+---> Processing directory /etc/statetab.d 
+41ed  . 
+41ed  .. 
+a1ff  rc6.d 
+81a4  sysctl.conf 
+81a4  GREP_COLORS 
+41ed  gcrypt 
+41ed  libnl 
+41ed  sasl2 
+
+---> Processing directory /etc/sasl2 
+41ed  . 
+41ed  .. 
+81a4  smtpd.conf 
+41e8  dhcp 
+81a4  magic 
+  magic        2 
+41ed  groff 
+41ed  pkcs11 
+41ed  ssl 
+41e8  audisp 
+81a4  virc 
+41ed  selinux 
+41ed  gss 
+
+---> Processing directory /etc/gss 
+41ed  . 
+41ed  .. 
+41ed  mech.d 
+81a4  kdump.conf 
+81a4  krb5.conf 
+41ed  openldap 
+41ed  security 
+81a4  yum.conf 
+81a4  libuser.conf 
+41ed  plymouth 
+81a4  DIR_COLORS 
+81a4  my.cnf 
+41ed  subversion 
+81a4  DIR_COLORS.lightbgcolor 
+41ed  pam.d 
+
+---> Processing directory /etc/pam.d 
+41ed  . 
+41ed  .. 
+81a4  config-util 
+81a4  other 
+81a4  chfn 
+81a4  chsh 
+  chsh        2 
+81a4  login 
+  login        3 
+81a4  remote 
+81a4  runuser 
+81a4  runuser-l 
+  runuser-l        2 
+81a4  su 
+  su        3 
+81a4  su-l 
+  su-l        2 
+81a4  systemd-user 
+81a4  polkit-1 
+81a4  crond 
+  crond        2 
+81a4  ppp 
+  ppp        2 
+81a4  vlock 
+81a4  smtp.postfix 
+a1ff  smtp 
+81a4  sshd 
+81a4  passwd 
+81a4  sudo 
+81a4  sudo-i 
+81a4  system-auth-ac 
+  system-auth-ac        3 
+a1ff  system-auth 
+81a4  postlogin-ac 
+  postlogin-ac        2 
+a1ff  postlogin 
+81a4  password-auth-ac 
+  password-auth-ac        3 
+a1ff  password-auth 
+81a4  fingerprint-auth-ac 
+a1ff  fingerprint-auth 
+81a4  smartcard-auth-ac 
+  smartcard-auth-ac        3 
+a1ff  smartcard-auth 
+41ed  avahi 
+81a4  login.defs 
+8180  .pwd.lock 
+41ed  logrotate.d 
+81a4  asound.conf 
+81a4  sestatus.conf 
+  sestatus.conf        2 
+41ed  postfix 
+81a4  group- 
+8000  gshadow- 
+41ed  depmod.d 
+
+---> Processing directory /etc/depmod.d 
+41ed  . 
+41ed  .. 
+81a4  dist.conf 
+  dist.conf        2 
+41ed  modprobe.d 
+81a4  rsyslog.conf 
+  rsyslog.conf        8 
+a1ff  favicon.png 
+41ed  sysctl.d 
+41e8  firewalld 
+
+---> Processing directory /etc/firewalld 
+41e8  . 
+41ed  .. 
+81a0  firewalld.conf 
+  firewalld.conf        4 
+41e8  icmptypes 
+81a0  lockdown-whitelist.xml 
+41e8  services 
+41e8  zones 
+81a4  gdbinit 
+41ed  gdbinit.d 
+
+---> Processing directory /etc/gdbinit.d 
+41ed  . 
+41ed  .. 
+41ed  cron.daily 
+41ed  modules-load.d 
+
+---> Processing directory /etc/modules-load.d 
+41ed  . 
+41ed  .. 
+81a4  logrotate.conf 
+41ed  my.cnf.d 
+41ed  prelink.conf.d 
+41ed  tuned 
+
+---> Processing directory /etc/tuned 
+41ed  . 
+41ed  .. 
+81a4  active_profile 
+81a4  tuned-main.conf 
+81a4  bootcmdline 
+81a4  makedumpfile.conf.sample 
+81a4  e2fsck.conf 
+  e2fsck.conf        2 
+81a4  mke2fs.conf 
+  mke2fs.conf        3 
+81a0  sudo-ldap.conf 
+81a0  sudo.conf 
+8120  sudoers 
+41e8  sudoers.d 
+81a4  man_db.conf 
+81a4  vconsole.conf 
+  vconsole.conf        2 
+a1ff  localtime 
+81a4  locale.conf 
+81a4  hostname 
+81a4  resolv.conf 
+81a4  aliases.db 
+81a4  centos-release-upstream 
+41ed  python 
+8180  tcsd.conf 
+81a4  .updated 
+81a4  wgetrc 
+4168  root 
+
+---> Processing directory /root 
+4168  . 
+416d  .. 
+81a4  .bash_logout 
+81a4  .bash_profile 
+81a4  .cshrc 
+81a4  .tcshrc 
+41e0  .pki 
+41ed  .subversion 
+8180  .rnd 
+41c0  .ssh 
+41ed  .tmp_versions 
+81a4  .kyoukofb.o.cmd 
+81a4  .kyoukofb.mod.o.cmd 
+81a4  .kyoukofb.ko.cmd 
+8180  .lesshst 
+8180  .bash_history 
+41ed  Project2 
+81a4  .bashrc 
+41ed  Project3 
+
+---> Processing directory /root/Project3 
+41ed  . 
+4168  .. 
+41ed  lab1 
+8180  .viminfo 
+41ed  .git 
+81a4  .gitconfig 
+41ed  .vnc 
+8180  .Xauthority 
+41ed  .config 
+81a4  .bashrc.backup 
+81a4  .vimrc 
+41ed  Project1 
+43ff  tmp 
+
+---> Processing directory /tmp 
+43ff  . 
+416d  .. 
+43ff  .X11-unix 
+43ff  .ICE-unix 
+43ff  .XIM-unix 
+43ff  .font-unix 
+43ff  .Test-unix 
+8180  sh-thd-1458775069 
+  sh-thd-1458775069        1 
+41ed  var 
+41ed  usr 
+a1ff  bin 
+a1ff  sbin 
+a1ff  lib 
+a1ff  lib64 
+41ed  home 
+
+---> Processing directory /home 
+41ed  . 
+416d  .. 
+41ed  media 
+41ed  mnt 
+
+---> Processing directory /mnt 
+41ed  . 
+416d  .. 
+41ed  opt 
+
+---> Processing directory /opt 
+41ed  . 
+416d  .. 
+41ed  srv 
