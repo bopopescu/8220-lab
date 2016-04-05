@@ -32,7 +32,7 @@ SYSCALL_DEFINE2(smunch, int, pid, unsigned long, bit_pattern)
 	{
 		if(cmpxchg(&p->exit_state, EXIT_ZOMBIE, EXIT_DEAD)!=EXIT_ZOMBIE)
 		{
-			rcu_read_unlock():
+			rcu_read_unlock();
 			return (-1);
 		}
 		release_task(p);
