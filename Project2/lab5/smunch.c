@@ -6,6 +6,7 @@
  ************************************************************************/
 
 #include <stdio.h>
+#include <sys/syscall.h>
 #define smunch(arg1,arg2) syscall(325,arg1,arg2)
 
 int main(int argc, char* argv[])
