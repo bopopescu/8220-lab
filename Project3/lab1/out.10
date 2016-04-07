@@ -8,459 +8,482 @@
 ---> Processing directory /usr/sbin 
 416d  . 
 41ed  .. 
-81ed  dmidecode 
-  dmidecode      170 
-a1ff  lsmod 
+81e8  usermod 
+  usermod      224 
+81ed  arpd 
 81c0  build-locale-archive 
-81ed  chpasswd 
+81ed  lnewusers 
+  lnewusers       32 
 81ed  zdump 
   zdump       30 
-81ed  nologin 
-  nologin       15 
+81ed  swapon 
 81ed  zic 
-81e8  groupadd 
+81ed  lpasswd 
+  lpasswd       32 
 81ed  ldconfig 
   ldconfig     1866 
-81ed  partx 
-  partx      166 
+81ed  switch_root 
+  switch_root       32 
 81ed  sln 
-  sln     1458 
-81ed  biosdecode 
-81ed  pivot_root 
-  pivot_root       24 
+81e8  userdel 
+  userdel      158 
+81ed  wipefs 
 81c0  glibc_post_upgrade.x86_64 
-81e8  groupdel 
-  groupdel      113 
-81ed  ownership 
-  ownership       24 
-a1ff  rmmod 
+  glibc_post_upgrade.x86_64     1514 
+81ed  fixfiles 
+  fixfiles       23 
+a1ff  vigr 
+81ed  luseradd 
+  luseradd       32 
 81ed  iconvconfig 
   iconvconfig       47 
 81ed  iconvconfig.x86_64 
-  iconvconfig.x86_64       47 
 81ed  cracklib-check 
 81ed  sefcontext_compile 
-81e8  groupmems 
-  groupmems      113 
-81ed  install-info 
-81e8  groupmod 
-  groupmod      151 
-81ed  chkconfig 
-  chkconfig       82 
-81ed  grpck 
-a1ff  halt 
-81ed  alternatives 
-  alternatives       49 
-81ed  vpddecode 
-  vpddecode       32 
-a1ff  init 
-a1ff  update-alternatives 
-81ed  grpconv 
-  grpconv      104 
-81ed  capsh 
-81ed  grpunconv 
-  grpunconv      104 
-81ed  getcap 
-  getcap       24 
-81ed  newusers 
-81ed  getpcaps 
-  getpcaps       24 
-81ed  pwck 
-a1ff  ping6 
-81ed  setcap 
-81ed  cracklib-format 
-81ed  sasldblistusers2 
-  sasldblistusers2       40 
-81ed  pwconv 
-  pwconv       96 
-81ed  saslpasswd2 
-  saslpasswd2       32 
-81ed  lnewusers 
-81ed  rdisc 
-  rdisc       56 
-81ed  genl-ctrl-list 
-81ed  pwunconv 
-81ed  nl-class-add 
-  nl-class-add       25 
-81ed  lid 
-81ed  readprofile 
-81ed  nl-class-delete 
-  nl-class-delete       25 
-81ed  lpasswd 
-81ed  crond 
-  crond      138 
-81ed  nl-class-list 
-  nl-class-list       24 
-81ed  luseradd 
-81ed  chat 
-  chat       56 
-81ed  nl-classid-lookup 
-81e8  useradd 
-  useradd      224 
-81ed  nl-cls-add 
-  nl-cls-add       25 
+  sefcontext_compile       32 
 81ed  luserdel 
-816d  pppd 
-  pppd      747 
-81ed  nl-cls-delete 
-81e8  userdel 
-  userdel      158 
-81ed  nl-cls-list 
-  nl-cls-list       25 
-81e8  usermod 
-  usermod      224 
-81ed  nl-link-list 
+81ed  install-info 
+  install-info      222 
 81ed  lusermod 
-81ed  arpd 
-81ed  nl-pktloc-lookup 
-  nl-pktloc-lookup       24 
-a1ff  vigr 
-81ed  cbq 
-81ed  nl-qdisc-add 
-  nl-qdisc-add       25 
-81ed  chroot 
-  chroot       66 
-81ed  genl 
-  genl       90 
-81ed  nl-qdisc-delete 
-81ed  faillock 
-  faillock       31 
-81ed  ifcfg 
-  ifcfg        7 
-81ed  nl-qdisc-list 
-81ed  vipw 
-81ed  ip 
-81ed  ethtool 
-  ethtool      516 
+  lusermod       40 
+81ed  chkconfig 
 81ed  addpart 
   addpart       32 
-81ed  killall5 
+81ed  alternatives 
+  alternatives       49 
+81ed  vipw 
+  vipw      118 
+81ed  load_policy 
+a1ff  update-alternatives 
 81ed  agetty 
   agetty       73 
-a1ff  pidof 
+81ed  capsh 
+  capsh       40 
 81ed  blkdiscard 
-  blkdiscard       41 
-a1ff  cache_check 
+81ed  getcap 
+  getcap       24 
 81ed  blkid 
-81ed  nstat 
-  nstat       41 
-a1ff  cache_dump 
+81ed  cbq 
+81ed  getpcaps 
 81ed  blockdev 
   blockdev       66 
-a1ff  cache_repair 
-81ed  mkhomedir_helper 
-a1ff  cache_restore 
+81ed  setcap 
+  setcap       24 
+81ed  cracklib-format 
+  cracklib-format        2 
+81ed  genl-ctrl-list 
 81ed  cfdisk 
   cfdisk      136 
-a1ff  era_check 
-81ed  chcpu 
-81ed  rtmon 
-a1ff  era_dump 
-81ed  pam_console_apply 
-  pam_console_apply       81 
-a1ff  era_invalidate 
-a1ff  clock 
-81ed  rtpr 
-  rtpr        2 
-a1ff  thin_check 
-81ed  ctrlaltdel 
-  ctrlaltdel       24 
-a1ff  thin_dump 
+81ed  nl-class-add 
 81ed  pam_tally2 
-  pam_tally2       32 
-81ed  ss 
-a1ff  thin_metadata_size 
-81ed  delpart 
-a1ff  thin_repair 
-81ed  fdformat 
-  fdformat       24 
-a1ff  thin_restore 
-81ed  fdisk 
-81ed  tc 
-  tc      583 
-a1ff  thin_rmap 
-81ed  findfs 
-  findfs       24 
-81ed  avcstat 
-  avcstat       24 
-81ed  fsck 
-81ed  ifup 
-  ifup       10 
-81ed  getenforce 
-  getenforce       15 
-81ed  fsck.cramfs 
-  fsck.cramfs       41 
-81ed  getsebool 
-  getsebool       24 
-81ed  fsck.minix 
-81ed  matchpathcon 
+81ed  genl 
+  genl       90 
+81ed  nl-class-delete 
 89ed  pam_timestamp_check 
-  pam_timestamp_check       23 
-81ed  selinuxconlist 
-  selinuxconlist       24 
+81ed  nl-class-list 
+  nl-class-list       24 
 81ed  pwhistory_helper 
-  pwhistory_helper       32 
-81ed  selinuxdefcon 
-  selinuxdefcon       24 
+81ed  nl-classid-lookup 
+  nl-classid-lookup       24 
+81ed  chcpu 
+  chcpu       49 
+81ed  ifcfg 
+81ed  nl-cls-add 
+  nl-cls-add       25 
 89ed  unix_chkpwd 
-  unix_chkpwd       72 
-81ed  kdump 
-81ed  selinuxenabled 
-  selinuxenabled       15 
-81ed  plymouth-set-default-theme 
-  plymouth-set-default-theme       14 
-81ed  selinuxexeccon 
-81ed  fsfreeze 
-81ed  setenforce 
-81ed  fstrim 
-  fstrim       74 
-81ed  hardlink 
-81ed  cracklib-packer 
-  cracklib-packer       24 
+81ed  ip 
+  ip      639 
+81ed  nl-cls-delete 
+  nl-cls-delete       25 
+a1ff  clock 
+81ed  nstat 
+81ed  nl-cls-list 
+  nl-cls-list       25 
+81ed  ctrlaltdel 
+81ed  nl-link-list 
+  nl-link-list       25 
 81c0  unix_update 
   unix_update       72 
-81ed  kexec 
-  kexec      333 
-81ed  cracklib-unpacker 
-a1ff  adduser 
-816d  fsadm 
-81ed  create-cracklib-dict 
-  create-cracklib-dict        3 
-81ed  hwclock 
-  hwclock       90 
-a1ff  mkdict 
-81ed  ldattach 
-a1ff  packer 
-81ed  losetup 
-  losetup      150 
-81ed  lchage 
-  lchage       32 
-81ed  mkfs 
-816d  lvm 
-  lvm     3032 
-81ed  lgroupadd 
-  lgroupadd       24 
-81ed  mkfs.cramfs 
-81ed  lgroupdel 
-  lgroupdel       24 
-81ed  mkfs.minix 
-  mkfs.minix       66 
-81ed  lgroupmod 
-81ed  mkswap 
-  mkswap      132 
-81ed  resizepart 
-  resizepart       58 
-81ed  rtcwake 
-81ed  runuser 
-81ed  sfdisk 
-81ed  sulogin 
-  sulogin       82 
-81ed  swaplabel 
-  swaplabel       32 
-81ed  swapoff 
-81ed  swapon 
-81ed  switch_root 
-  switch_root       32 
-81ed  wipefs 
-a1ff  depmod 
-a1ff  insmod 
-a1ff  modinfo 
-a1ff  modprobe 
-81ed  weak-modules 
+81ed  rtmon 
+  rtmon       82 
+81ed  nl-pktloc-lookup 
+81ed  delpart 
+81ed  nl-qdisc-add 
 81ed  sysctl 
-81ed  virt-what 
+  sysctl       49 
+81ed  rtpr 
+81ed  nl-qdisc-delete 
+  nl-qdisc-delete       25 
 81ed  grubby 
   grubby      136 
+81ed  ss 
+  ss      217 
+81ed  nl-qdisc-list 
 81ed  installkernel 
+  installkernel        7 
+81ed  tc 
+  tc      583 
+81ed  sasldblistusers2 
+81ed  fdformat 
+81ed  saslpasswd2 
+81ed  fdisk 
+  fdisk      358 
+a1ff  lsmod 
+81ed  killall5 
+  killall5       48 
+81ed  findfs 
+a1ff  pidof 
+81ed  fsck.minix 
+  fsck.minix      148 
+81ed  ethtool 
+  ethtool      516 
+81ed  fsck.cramfs 
+81ed  avcstat 
+  avcstat       24 
+81ed  fsfreeze 
+  fsfreeze       24 
+81ed  getenforce 
+81ed  fstrim 
+  fstrim       74 
+81ed  getsebool 
+81ed  hwclock 
+81ed  matchpathcon 
+  matchpathcon       24 
 81ed  new-kernel-pkg 
-81ed  logrotate 
-81ed  fixfiles 
-a1ff  genhomedircon 
-81ed  load_policy 
-a1ff  restorecon 
-81ed  semodule 
-81ed  sestatus 
-  sestatus       31 
-81ed  setfiles 
-  setfiles       56 
-81ed  setsebool 
-  setsebool       31 
-816d  dmsetup 
-  dmsetup      290 
-a1ff  poweroff 
-a1ff  reboot 
-a1ff  runlevel 
-a1ff  shutdown 
-a1ff  telinit 
-a1ff  udevadm 
-81ed  arping 
-81ed  clockdiff 
-81ed  ifenslave 
-  ifenslave       41 
-a1ff  tracepath 
-a1ff  tracepath6 
-81ed  anacron 
-  anacron       72 
-81ed  grub2-bios-setup 
-81ed  grub2-install 
-  grub2-install     2599 
-81ed  grub2-macbless 
-  grub2-macbless     2050 
-81ed  grub2-mkconfig 
-  grub2-mkconfig       17 
-81ed  grub2-ofpathname 
-  grub2-ofpathname      444 
-81ed  grub2-probe 
-  grub2-probe     2084 
-81ed  grub2-reboot 
-  grub2-reboot        9 
-81ed  grub2-set-default 
-  grub2-set-default        8 
-81ed  grub2-sparc64-setup 
-816d  dmeventd 
-81ed  eapol_test 
-  eapol_test     2641 
-81ed  wpa_cli 
-  wpa_cli      181 
-81ed  wpa_passphrase 
-81ed  wpa_supplicant 
-81ed  dnsmasq 
-  dnsmasq      576 
-81ed  ebtables 
-  ebtables       15 
-81ed  ebtables-restore 
-81ed  ebtables-save 
-  ebtables-save        3 
-81ed  pppdump 
-  pppdump      107 
-816d  pppoe-discovery 
-81ed  pppstats 
-81ed  fxload 
-  fxload       40 
-81ed  kpartx 
-a1ff  dracut 
-a1ff  ip6tables 
-a1ff  ip6tables-restore 
-a1ff  ip6tables-save 
-a1ff  iptables 
-a1ff  iptables-restore 
-a1ff  iptables-save 
-81ed  xtables-multi 
-  xtables-multi      176 
-81ed  bridge 
-  bridge      115 
-a1ff  ctstat 
-81ed  ifstat 
-81ed  lnstat 
-81ed  routef 
-  routef        2 
-81ed  routel 
-81ed  rtacct 
-  rtacct       77 
-a1ff  rtstat 
-81ed  gss-server 
-  gss-server       48 
-81ed  consoletype 
-81ed  genhostid 
-  genhostid       15 
-81ed  ifdown 
-85ed  netreport 
-  netreport       23 
-81ed  ppp-watch 
-  ppp-watch       48 
-81ed  service 
-  service        8 
-81ed  sushell 
-  sushell        2 
-81ed  sys-unconfig 
-  sys-unconfig        2 
-89ed  usernetctl 
-  usernetctl       24 
-81ed  dhclient 
-  dhclient      830 
-81ed  dhclient-script 
-81ed  avahi-daemon 
-  avahi-daemon      268 
+  new-kernel-pkg       51 
+81ed  selinuxconlist 
+  selinuxconlist       24 
 81ed  avahi-autoipd 
-a1ff  pvdisplay 
-81ed  plymouthd 
-a1ff  pvmove 
+  avahi-autoipd       80 
+a1ff  rmmod 
+81ed  selinuxdefcon 
+81ed  logrotate 
+a1ff  halt 
+81ed  selinuxenabled 
+  selinuxenabled       15 
+81ed  lchage 
+a1ff  init 
+81ed  selinuxexeccon 
+  selinuxexeccon       16 
+81ed  ldattach 
+  ldattach       49 
+81ed  setenforce 
+  setenforce       16 
+81ed  losetup 
+81ed  chroot 
+  chroot       66 
+81ed  mkfs 
+  mkfs       24 
+a1ff  ping6 
+a1ff  adduser 
+81ed  mkfs.cramfs 
+  mkfs.cramfs       65 
+81ed  chpasswd 
+  chpasswd      105 
+81ed  mkfs.minix 
+81e8  groupadd 
+81ed  mkswap 
+  mkswap      132 
+81e8  groupdel 
+  groupdel      113 
+81ed  nologin 
+  nologin       15 
+81e8  groupmems 
+  groupmems      113 
+81ed  partx 
+  partx      166 
+81ed  rdisc 
+81e8  groupmod 
+  groupmod      151 
+81ed  pivot_root 
+  pivot_root       24 
+81ed  grpck 
+81ed  readprofile 
+81ed  grpconv 
+81ed  resizepart 
+  resizepart       58 
+81ed  grpunconv 
+81ed  rtcwake 
+  rtcwake       57 
+81ed  newusers 
+  newusers      142 
+a1ff  restorecon 
+81ed  pwck 
+  pwck      104 
+81ed  runuser 
+81ed  pwconv 
+81ed  sfdisk 
+  sfdisk      134 
+81ed  pwunconv 
+  pwunconv       78 
+81ed  sulogin 
+81e8  useradd 
+  useradd      224 
+81ed  cracklib-packer 
+  cracklib-packer       24 
+81ed  lgroupadd 
+81ed  ifup 
+  ifup       10 
+81ed  cracklib-unpacker 
+  cracklib-unpacker       16 
+81ed  lgroupdel 
+81ed  crond 
+  crond      138 
+81ed  create-cracklib-dict 
+  create-cracklib-dict        3 
+81ed  swaplabel 
+a1ff  mkdict 
+81ed  swapoff 
+  swapoff       32 
+a1ff  packer 
+a1ff  genhomedircon 
+81ed  faillock 
+  faillock       31 
+81ed  lgroupmod 
+81ed  chat 
+81ed  mkhomedir_helper 
+81ed  lid 
+  lid       32 
+81ed  semodule 
+  semodule       41 
+81ed  pam_console_apply 
+81ed  sestatus 
+81ed  fsck 
+  fsck       66 
+81ed  setfiles 
+a1ff  era_invalidate 
+81ed  setsebool 
+a1ff  era_restore 
+81ed  hardlink 
+81ed  pdata_tools 
 81ed  addgnupghome 
   addgnupghome        8 
-a1ff  lvscan 
-81ed  tuned 
-  tuned        7 
+816d  pppoe-discovery 
 81ed  applygnupgdefaults 
-  applygnupgdefaults        6 
-a1ff  pvchange 
-81ed  sshd 
-  sshd     1594 
-81ed  NetworkManager 
-  NetworkManager     3799 
-a1ff  pvremove 
-81ed  rsyslogd 
-  rsyslogd     1086 
-a1ff  pvresize 
-81ed  makedumpfile 
-  makedumpfile      632 
+a1ff  thin_check 
+a1ff  ip6tables 
+81ed  pppdump 
 a1ff  pvs 
-81ed  btrfs 
-  btrfs     1107 
-81ed  mkdumprd 
-a1ff  pvscan 
-81ed  vmcore-dmesg 
-a1ff  sendmail 
-81ed  acpid 
-  acpid      106 
-a1ff  vgcfgbackup 
-81ed  firewalld 
-a1ff  pvcreate 
-81ed  lspci 
-  lspci      141 
+a1ff  ip6tables-restore 
+81ed  pppstats 
+a1ff  vgck 
+a1ff  ip6tables-save 
+a1ff  thin_delta 
+a1ff  iptables 
+81ed  tcsd 
+a1ff  pvck 
+a1ff  iptables-restore 
+81ed  plymouth-set-default-theme 
+a1ff  iptables-save 
+81ed  plymouthd 
+  plymouthd      170 
+a1ff  vgs 
+81ed  xtables-multi 
+  xtables-multi      176 
+a1ff  thin_dump 
+81ed  bridge 
+  bridge      115 
+a1ff  thin_metadata_size 
+a1ff  ctstat 
+a1ff  thin_repair 
+81ed  ifstat 
+  ifstat       66 
+a1ff  thin_restore 
+81ed  lnstat 
+a1ff  thin_rmap 
+81ed  routef 
+a1ff  thin_trim 
+81ed  routel 
+  routel        4 
+81ed  biosdecode 
+  biosdecode       34 
+81ed  rtacct 
+81ed  dmidecode 
+  dmidecode      170 
+a1ff  rtstat 
+81ed  ownership 
+  ownership       24 
+81ed  kpartx 
+  kpartx       74 
+81ed  fxload 
+  fxload       40 
+81ed  sshd 
+  sshd     1602 
 816d  blkdeactivate 
   blkdeactivate       25 
-a1ff  vgcfgrestore 
+81ed  vpddecode 
+  vpddecode       32 
+816d  dmsetup 
+81ed  virt-what 
+a1ff  dmstats 
+81ed  dhclient 
+  dhclient      830 
+a1ff  dracut 
+81ed  dhclient-script 
+  dhclient-script       56 
+a1ff  depmod 
+81ed  NetworkManager 
+a1ff  insmod 
+81ed  kdump 
+81ed  btrfs 
+  btrfs     1107 
+a1ff  modinfo 
+81ed  kexec 
+  kexec      333 
+81ed  fuser 
+a1ff  modprobe 
+81ed  makedumpfile 
+  makedumpfile      640 
+81ed  weak-modules 
+  weak-modules       35 
+81ed  mkdumprd 
+a1ff  poweroff 
+81ed  vmcore-dmesg 
+a1ff  reboot 
+81ed  rsyslogd 
+  rsyslogd     1086 
+a1ff  runlevel 
+81ed  tuned 
+81ed  realm 
+  realm      279 
+a1ff  shutdown 
+81ed  tuned-adm 
+  tuned-adm        7 
+a1ff  telinit 
+816d  fsadm 
+81ed  gdm 
+a1ff  udevadm 
 a1ff  lvchange 
-a1ff  vgchange 
+81ed  arping 
+  arping       48 
 a1ff  lvconvert 
-a1ff  vgck 
-81ed  tcsd 
-  tcsd      602 
+81ed  clockdiff 
 a1ff  lvcreate 
-a1ff  vgconvert 
+81ed  ifenslave 
+  ifenslave       41 
 a1ff  lvdisplay 
-a1ff  vgcreate 
+a1ff  tracepath 
 a1ff  lvextend 
-a1ff  vgdisplay 
+a1ff  tracepath6 
+816d  lvm 
+  lvm     3032 
+81ed  lspci 
+81ed  consoletype 
+  consoletype       15 
 a1ff  lvmchange 
-a1ff  vgexport 
+81ed  genhostid 
 816d  lvmconf 
-a1ff  vgextend 
+  lvmconf       26 
+81ed  ifdown 
+  ifdown        5 
+a1ff  lvmconfig 
+85ed  netreport 
+  netreport       23 
 a1ff  lvmdiskscan 
-a1ff  vgimport 
+81ed  ppp-watch 
+  ppp-watch       48 
 816d  lvmdump 
+  lvmdump       20 
+81ed  service 
+  service        8 
+816d  lvmetad 
+  lvmetad      105 
+81ed  sushell 
+816d  lvmpolld 
+  lvmpolld      116 
+81ed  sys-unconfig 
+a1ff  lvmsadc 
+89ed  usernetctl 
+a1ff  lvmsar 
+81ed  eapol_test 
+  eapol_test     2641 
+a1ff  lvreduce 
+81ed  wpa_cli 
+  wpa_cli      181 
+81ed  ebtables 
+  ebtables       15 
+a1ff  lpc 
+81ed  wpa_passphrase 
+  wpa_passphrase       90 
+81ed  ebtables-restore 
+  ebtables-restore       23 
+81ed  wpa_supplicant 
+  wpa_supplicant     2837 
+a1ff  lvremove 
+81ed  anacron 
+  anacron       72 
+81ed  ebtables-save 
+  ebtables-save        3 
+81ed  atd 
+81ed  grub2-bios-setup 
+a1ff  cache_check 
+81ed  atrun 
+  atrun        2 
+81ed  grub2-install 
+a1ff  cache_dump 
+81ed  arp 
+  arp      129 
+81ed  grub2-macbless 
+  grub2-macbless     2050 
+a1ff  cache_metadata_size 
+81ed  grub2-mkconfig 
+  grub2-mkconfig       17 
+a1ff  cache_repair 
+81ed  route 
+81ed  grub2-ofpathname 
+a1ff  lvrename 
+81ed  grub2-probe 
+  grub2-probe     2084 
+a1ff  lvresize 
+81ed  grub2-reboot 
+a1ff  cache_restore 
+81ed  grub2-rpm-sort 
+a1ff  era_check 
+81ed  grub2-set-default 
+  grub2-set-default        8 
+a1ff  sendmail 
+81ed  grub2-setpassword 
+  grub2-setpassword        7 
+a1ff  era_dump 
+81ed  grub2-sparc64-setup 
+a1ff  lvs 
+816d  dmeventd 
+  dmeventd       72 
+a1ff  lvscan 
+81ed  dnsmasq 
+a1ff  pvcreate 
+816d  pppd 
+  pppd      747 
+a1ff  pvchange 
+a1ff  pvdisplay 
+a1ff  pvmove 
+a1ff  pvremove 
+a1ff  pvresize 
+a1ff  pvscan 
+a1ff  vgcfgbackup 
+a1ff  vgcfgrestore 
+a1ff  vgchange 
+a1ff  vgconvert 
+a1ff  vgcreate 
+a1ff  vgdisplay 
+a1ff  vgexport 
+a1ff  vgextend 
+a1ff  vgimport 
 816d  vgimportclone 
   vgimportclone       22 
-816d  lvmetad 
 a1ff  vgmerge 
-a1ff  lvmsadc 
 a1ff  vgmknodes 
-a1ff  lvmsar 
 a1ff  vgreduce 
-a1ff  lvreduce 
 a1ff  vgremove 
-a1ff  lvremove 
 a1ff  vgrename 
-a1ff  lvrename 
-a1ff  vgs 
-81ed  arp 
-a1ff  lvresize 
+a1ff  vgscan 
 a1ff  vgsplit 
-a1ff  lvs 
+81ed  accessdb 
+  accessdb       24 
+81ed  firewalld 
+  firewalld       12 
 81e8  audispd 
   audispd       97 
-a1ff  pvck 
-a1ff  vgscan 
 81e8  auditctl 
   auditctl       80 
 81e8  auditd 
@@ -470,19 +493,18 @@ a1ff  vgscan
 81ed  ausearch 
   ausearch      188 
 81e8  autrace 
-  autrace       32 
 81ed  postalias 
-  postalias      509 
 81ed  postcat 
   postcat      274 
 81ed  postconf 
   postconf      728 
 85ed  postdrop 
-  postdrop      428 
 81ed  postfix 
+  postfix      240 
 81ed  postkick 
   postkick      264 
 81ed  postlock 
+  postlock      256 
 81ed  postlog 
   postlog      240 
 81ed  postmap 
@@ -496,190 +518,1148 @@ a1ff  vgscan
   smtp-sink      183 
 81ed  smtp-source 
   smtp-source      157 
-a1ff  thin_trim 
-81ed  biosdevname 
-  biosdevname       74 
-a1ff  lvmconfig 
-81ed  irqbalance 
-  irqbalance       98 
-816d  lvmpolld 
-81ed  tuned-adm 
-81ed  sim_server 
-  sim_server       23 
-81ed  intel-microcode2ucode 
-  intel-microcode2ucode       24 
-81ed  iprsos 
-81ed  sshd-keygen 
-  sshd-keygen        9 
-81ed  btrfs-select-super 
-  btrfs-select-super      522 
-81ed  parted 
-  parted      148 
-81ed  fsck.btrfs 
-  fsck.btrfs        4 
-81ed  partprobe 
-  partprobe       24 
-81ed  sserver 
-a1ff  authconfig 
-81ed  setpci 
-  setpci       48 
-a1ff  authconfig-tui 
-81ed  update-pciids 
-  update-pciids        5 
-81ed  cacertdir_rehash 
-  cacertdir_rehash        3 
-81ed  uuserver 
-81ed  badblocks 
-  badblocks       57 
-81ed  ether-wake 
-  ether-wake      148 
-81ed  debugfs 
-81ed  ifconfig 
-  ifconfig      162 
-81ed  dumpe2fs 
-  dumpe2fs       49 
-81ed  ipmaddr 
-  ipmaddr       40 
-81ed  e2freefrag 
-  e2freefrag       24 
-81ed  iptunnel 
-  iptunnel       48 
-81ed  e2image 
-  e2image       65 
-81ed  mii-diag 
-81ed  e2undo 
-  e2undo       24 
-81ed  mii-tool 
-81ed  e4defrag 
-81ed  nameif 
-  nameif       32 
-81ed  filefrag 
-  filefrag       32 
-81ed  plipconfig 
-  plipconfig       24 
-81ed  logsave 
-81ed  route 
-  route      135 
-81ed  mklost+found 
-81ed  slattach 
-  slattach       86 
-81ed  resize2fs 
-  resize2fs       98 
-81ed  accessdb 
-81c0  iprdbg 
-81ed  kacpimon 
-  kacpimon       48 
-81ed  e2fsck 
-  e2fsck      502 
-81ed  fsck.ext2 
-81ed  fsck.ext3 
-81ed  fsck.ext4 
-  fsck.ext4      502 
-81ed  iprdump 
-  iprdump      232 
-81ed  hdparm 
-  hdparm      215 
-81ed  e2label 
-81ed  tune2fs 
-81ed  mkfs.btrfs 
-81ed  visudo 
-  visudo      366 
-81ed  iprconfig 
-  iprconfig      756 
-81ed  iprinit 
-81ed  mke2fs 
-81ed  mkfs.ext2 
-  mkfs.ext2      189 
-81ed  mkfs.ext3 
-81ed  mkfs.ext4 
-  mkfs.ext4      189 
-81ed  fsck.xfs 
-  fsck.xfs        2 
-81ed  mkfs.xfs 
-  mkfs.xfs      688 
-81ed  xfs_admin 
-81ed  xfs_bmap 
-  xfs_bmap        3 
-81ed  xfs_copy 
-  xfs_copy      606 
-81ed  xfs_db 
-  xfs_db     1089 
-81ed  xfs_estimate 
-81ed  xfs_freeze 
-  xfs_freeze        3 
-81ed  xfs_fsr 
-  xfs_fsr       65 
-81ed  xfs_growfs 
-  xfs_growfs      607 
-81ed  xfs_info 
-  xfs_info        2 
-81ed  xfs_io 
-  xfs_io      239 
-81ed  xfs_logprint 
-  xfs_logprint      664 
-a1ff  dmstats 
-81ed  xfs_mdrestore 
-  xfs_mdrestore      582 
-81ed  xfs_metadump 
-  xfs_metadump        3 
-81ed  xfs_mkfile 
-  xfs_mkfile        3 
-81ed  xfs_ncheck 
-  xfs_ncheck        3 
-81ed  xfs_quota 
-  xfs_quota      163 
-81ed  xfs_repair 
-  xfs_repair     1086 
-81ed  xfs_rtcp 
-  xfs_rtcp       32 
-81ed  grub2-rpm-sort 
-  grub2-rpm-sort      518 
 81ed  btrfs-convert 
   btrfs-convert      587 
-81ed  grub2-setpassword 
-  grub2-setpassword        7 
+81ed  irqbalance 
+  irqbalance       98 
 81ed  btrfs-debug-tree 
-a1ff  cache_metadata_size 
+  btrfs-debug-tree      530 
+81ed  biosdevname 
 81ed  btrfs-find-root 
-81ed  btrfs-image 
-  btrfs-image      579 
-a1ff  era_restore 
+  btrfs-find-root      522 
+81ed  sshd-keygen 
+  sshd-keygen        9 
+81ed  e2label 
+  e2label      140 
+81ed  intel-microcode2ucode 
 81ed  btrfs-map-logical 
   btrfs-map-logical      522 
-81ed  pdata_tools 
-  pdata_tools     2333 
+81ed  parted 
+  parted      148 
+81ed  btrfs-select-super 
+81ed  partprobe 
+  partprobe       24 
 81ed  btrfs-show-super 
-a1ff  thin_delta 
+  btrfs-show-super      531 
+81ed  iprconfig 
+  iprconfig      756 
 81ed  btrfs-zero-log 
   btrfs-zero-log      522 
+81c0  iprdbg 
+  iprdbg      257 
 81ed  btrfstune 
   btrfstune      522 
+81ed  iprdump 
 a1ff  btrfsck 
+81ed  iprinit 
+  iprinit      232 
+81ed  fsck.btrfs 
+81ed  iprsos 
+81ed  mkfs.btrfs 
+  mkfs.btrfs      563 
 81ed  iprupdate 
   iprupdate      232 
+81ed  xfce4-kiosk-query 
+  xfce4-kiosk-query       24 
+a1ff  authconfig 
+81ed  mkfs.ext3 
+a1ff  authconfig-tui 
+81ed  mkfs.ext4 
+  mkfs.ext4      189 
+81ed  cacertdir_rehash 
+81ed  spice-vdagentd 
+  spice-vdagentd       81 
+81ed  visudo 
+  visudo      366 
+81ed  usbmuxd 
+81ed  fsck.xfs 
+81ed  oddjobd 
+  oddjobd      146 
+81ed  mkfs.xfs 
+  mkfs.xfs      688 
+81ed  xfce4-pm-helper 
+81ed  xfs_admin 
+81ed  rtkitctl 
+  rtkitctl       23 
+81ed  xfs_bmap 
+  xfs_bmap        3 
+81ed  setpci 
+  setpci       48 
+81ed  xfs_copy 
+81ed  gss-server 
+81ed  xfs_db 
+81ed  update-pciids 
+  update-pciids        5 
+81ed  xfs_estimate 
+  xfs_estimate       24 
+81ed  lpc.cups 
+81ed  xfs_freeze 
+81ed  sim_server 
+  sim_server       23 
+81ed  xfs_fsr 
+81ed  sserver 
+  sserver       23 
+81ed  xfs_growfs 
+  xfs_growfs      607 
+81ed  uuserver 
+  uuserver       31 
+81ed  xfs_info 
+81ed  ifconfig 
+  ifconfig      162 
+81ed  xfs_io 
+  xfs_io      239 
+81ed  ether-wake 
+  ether-wake      148 
+81ed  xfs_logprint 
+81ed  mke2fs 
+  mke2fs      189 
+81ed  xfs_mdrestore 
+  xfs_mdrestore      582 
+81ed  ipmaddr 
+  ipmaddr       40 
+81ed  xfs_metadump 
+  xfs_metadump        3 
+81ed  iptunnel 
+  iptunnel       48 
+81ed  xfs_mkfile 
+  xfs_mkfile        3 
+81ed  mii-diag 
+  mii-diag       42 
+81ed  xfs_ncheck 
+  xfs_ncheck        3 
+81ed  mii-tool 
+  mii-tool       40 
+81ed  xfs_quota 
+  xfs_quota      163 
+81ed  nameif 
+  nameif       32 
+81ed  xfs_repair 
+  xfs_repair     1086 
+81ed  plipconfig 
+  plipconfig       24 
+81ed  xfs_rtcp 
+  xfs_rtcp       32 
+81ed  badblocks 
+  badblocks       57 
+81ed  slattach 
+  slattach       86 
+81ed  debugfs 
+81ed  dumpe2fs 
+816d  mount.vmhgfs 
+  mount.vmhgfs      125 
+81ed  e2freefrag 
+  e2freefrag       24 
+81ed  e2image 
+  e2image       65 
+81ed  e2undo 
+81ed  e4defrag 
+  e4defrag       57 
+81ed  filefrag 
+  filefrag       32 
+81ed  logsave 
+  logsave       24 
+81ed  mklost+found 
+  mklost+found       24 
+81ed  resize2fs 
+  resize2fs       98 
+81ed  fsck.ext4 
+81ed  tune2fs 
+81ed  mkfs.ext2 
+  mkfs.ext2      189 
+81ed  e2fsck 
+81ed  fsck.ext2 
+81ed  fsck.ext3 
+  fsck.ext3      502 
+81ed  btrfs-image 
+  btrfs-image      579 
+81ed  xfpm-power-backlight-helper 
+  xfpm-power-backlight-helper       24 
+81c0  redhat_lsb_trigger.x86_64 
+  redhat_lsb_trigger.x86_64       14 
 416d  lib 
 416d  lib64 
 41ed  share 
 41ed  etc 
 41ed  games 
+
+---> Processing directory /usr/games 
+41ed  . 
+41ed  .. 
 41ed  include 
+
+---> Processing directory /usr/include 
+41ed  . 
+41ed  .. 
+41ed  python2.7 
+41ed  telepathy-1.0 
+81a4  verto.h 
+  verto.h       39 
+a1ff  db.h 
+81a4  math.h 
+  math.h       33 
+a1ff  db_185.h 
+41ed  libdb 
+
+---> Processing directory /usr/include/libdb 
+41ed  . 
+41ed  .. 
+8124  db.h 
+  db.h      242 
+8124  db_185.h 
+  db_185.h       13 
+41ed  sys 
+81a4  memory.h 
+81a4  dbm.h 
+  dbm.h        4 
+41ed  gdbm 
+81a4  mcheck.h 
+  mcheck.h        6 
+81a4  gdbm.h 
+81a4  mntent.h 
+81a4  ndbm.h 
+  ndbm.h        6 
+41ed  asm 
+41ed  asm-generic 
+81a4  monetary.h 
+  monetary.h        5 
+81a4  cpufreq.h 
+41ed  drm 
+41ed  linux 
+
+---> Processing directory /usr/include/linux 
+41ed  . 
+41ed  .. 
+81a4  dlm_netlink.h 
+  dlm_netlink.h        4 
+81a4  a.out.h 
+  a.out.h       16 
+81a4  dlm_plock.h 
+  dlm_plock.h        3 
+81a4  acct.h 
+81a4  errqueue.h 
+81a4  adb.h 
+  adb.h        4 
+81a4  ethtool.h 
+  ethtool.h       89 
+81a4  adfs_fs.h 
+81a4  cycx_cfm.h 
+  cycx_cfm.h        7 
+81a4  in.h 
+81a4  affs_hardblocks.h 
+  affs_hardblocks.h        4 
+81a4  eventpoll.h 
+  eventpoll.h        5 
+81a4  agpgart.h 
+  agpgart.h        9 
+81a4  fadvise.h 
+  fadvise.h        3 
+81a4  aio_abi.h 
+  aio_abi.h        8 
+81a4  falloc.h 
+  falloc.h        5 
+81a4  apm_bios.h 
+  apm_bios.h        8 
+81a4  fanotify.h 
+  fanotify.h        8 
+81a4  arcfb.h 
+  arcfb.h        2 
+81a4  fb.h 
+81a4  in6.h 
+  in6.h       15 
+81a4  atalk.h 
+  atalk.h        3 
+81a4  fcntl.h 
+81a4  atm.h 
+81a4  fd.h 
+81a4  ip.h 
+  ip.h        8 
+81a4  atm_eni.h 
+81a4  fdreg.h 
+81a4  atm_he.h 
+81a4  dcbnl.h 
+81a4  ipc.h 
+  ipc.h        5 
+81a4  atm_idt77105.h 
+  atm_idt77105.h        3 
+81a4  elfcore.h 
+  elfcore.h        7 
+81a4  ipx.h 
+  ipx.h        5 
+81a4  atm_nicstar.h 
+81a4  fib_rules.h 
+  fib_rules.h        5 
+81a4  atm_tcp.h 
+81a4  fiemap.h 
+  fiemap.h        7 
+81a4  atm_zatm.h 
+  atm_zatm.h        5 
+81a4  filter.h 
+  filter.h        9 
+81a4  atmapi.h 
+81a4  firewire-cdev.h 
+  firewire-cdev.h       87 
+81a4  atmarp.h 
+  atmarp.h        4 
+81a4  firewire-constants.h 
+  firewire-constants.h        8 
+81a4  atmbr2684.h 
+81a4  flat.h 
+  flat.h        6 
+81a4  atmclip.h 
+  atmclip.h        3 
+81a4  fs.h 
+  fs.h       18 
+41ed  isdn 
+81a4  atmdev.h 
+  atmdev.h       16 
+81a4  fsl_hypervisor.h 
+  fsl_hypervisor.h       16 
+81a4  atmioc.h 
+81a4  fuse.h 
+81a4  atmlec.h 
+  atmlec.h        6 
+81a4  futex.h 
+81a4  atmmpc.h 
+  atmmpc.h       10 
+81a4  gameport.h 
+  gameport.h        3 
+81a4  atmppp.h 
+  atmppp.h        3 
+81a4  gen_stats.h 
+  gen_stats.h        4 
+81a4  atmsap.h 
+  atmsap.h       11 
+81a4  genetlink.h 
+  genetlink.h        5 
+81a4  atmsvc.h 
+  atmsvc.h        5 
+81a4  gfs2_ondisk.h 
+  gfs2_ondisk.h       25 
+81a4  audit.h 
+  audit.h       36 
+81a4  gigaset_dev.h 
+81a4  auto_fs.h 
+81a4  hdlc.h 
+81a4  auto_fs4.h 
+81a4  hdlcdrv.h 
+  hdlcdrv.h        7 
+81a4  auxvec.h 
+  auxvec.h        4 
+81a4  hdreg.h 
+81a4  ax25.h 
+  ax25.h        7 
+81a4  hid.h 
+  hid.h        5 
+81a4  kd.h 
+81a4  b1lli.h 
+  b1lli.h        5 
+81a4  hiddev.h 
+81a4  baycom.h 
+  baycom.h        3 
+81a4  hidraw.h 
+  hidraw.h        4 
+81a4  bfs_fs.h 
+  bfs_fs.h        5 
+81a4  hpet.h 
+81a4  binfmts.h 
+  binfmts.h        3 
+81a4  hw_breakpoint.h 
+  hw_breakpoint.h        3 
+81a4  blkpg.h 
+81a4  dccp.h 
+81a4  kvm.h 
+  kvm.h       65 
+81a4  blktrace_api.h 
+  blktrace_api.h       10 
+81a4  hysdn_if.h 
+  hysdn_if.h        4 
+81a4  bpqether.h 
+81a4  hyperv.h 
+81a4  bsg.h 
+81a4  i2c-dev.h 
+81a4  btrfs.h 
+  btrfs.h       41 
+41ed  byteorder 
+41ed  caif 
+41ed  can 
+81a4  i2c.h 
+  i2c.h       15 
+81a4  llc.h 
+  llc.h        7 
+81a4  can.h 
+  can.h       12 
+81a4  i2o-dev.h 
+81a4  capability.h 
+  capability.h       23 
+81a4  i8k.h 
+  i8k.h        4 
+81a4  lp.h 
+  lp.h        9 
+81a4  capi.h 
+  capi.h        7 
+81a4  icmp.h 
+81a4  cciss_defs.h 
+  cciss_defs.h        8 
+81a4  dlm.h 
+81a4  if_ltalk.h 
+81a4  cciss_ioctl.h 
+  cciss_ioctl.h        7 
+81a4  icmpv6.h 
+  icmpv6.h        9 
+81a4  cdrom.h 
+81a4  dlm_device.h 
+  dlm_device.h        6 
+81a4  mei.h 
+  mei.h       10 
+81a4  cgroupstats.h 
+81a4  if.h 
+81a4  mii.h 
+  mii.h       17 
+81a4  chio.h 
+  chio.h       12 
+81a4  if_addr.h 
+  if_addr.h        5 
+81a4  cm4000_cs.h 
+  cm4000_cs.h        5 
+81a4  if_arcnet.h 
+81a4  cn_proc.h 
+  cn_proc.h        8 
+81a4  if_addrlabel.h 
+  if_addrlabel.h        3 
+81a4  coda.h 
+81a4  if_alg.h 
+  if_alg.h        3 
+81a4  coda_psdev.h 
+  coda_psdev.h        3 
+81a4  if_arp.h 
+81a4  coff.h 
+81a4  if_bonding.h 
+  if_bonding.h       10 
+81a4  connector.h 
+81a4  if_bridge.h 
+  if_bridge.h       10 
+81a4  const.h 
+  const.h        3 
+81a4  if_ether.h 
+  if_ether.h       15 
+81a4  cramfs_fs.h 
+81a4  if_cablemodem.h 
+81a4  cuda.h 
+81a4  if_eql.h 
+  if_eql.h        4 
+81a4  cyclades.h 
+  cyclades.h       35 
+81a4  dlmconstants.h 
+  dlmconstants.h       11 
+81a4  if_fc.h 
+  if_fc.h        5 
+81a4  dm-ioctl.h 
+  dm-ioctl.h       22 
+81a4  errno.h 
+41ed  mmc 
+81a4  dm-log-userspace.h 
+81a4  if_packet.h 
+  if_packet.h       15 
+81a4  dn.h 
+81a4  if_fddi.h 
+81a4  dqblk_xfs.h 
+  dqblk_xfs.h       19 
+41ed  dvb 
+81a4  if_frad.h 
+  if_frad.h        7 
+81a4  edd.h 
+  edd.h       12 
+81a4  if_hippi.h 
+81a4  efs_fs_sb.h 
+  efs_fs_sb.h        6 
+81a4  if_pppol2tp.h 
+  if_pppol2tp.h        8 
+81a4  elf-em.h 
+81a4  if_infiniband.h 
+  if_infiniband.h        4 
+81a4  elf-fdpic.h 
+81a4  if_link.h 
+  if_link.h       29 
+81a4  elf.h 
+41ed  hdlc 
+41ed  hsi 
+81a4  if_phonet.h 
+  if_phonet.h        2 
+81a4  if_plip.h 
+  if_plip.h        3 
+81a4  if_ppp.h 
+  if_ppp.h        2 
+81a4  netfilter_arp.h 
+  netfilter_arp.h        2 
+81a4  if_pppox.h 
+81a4  netfilter_bridge.h 
+  netfilter_bridge.h        3 
+81a4  if_slip.h 
+  if_slip.h        3 
+81a4  netfilter_decnet.h 
+81a4  if_team.h 
+41ed  netfilter_ipv4 
+81a4  if_tun.h 
+  if_tun.h        9 
+81a4  netfilter_ipv4.h 
+  netfilter_ipv4.h        6 
+81a4  if_tunnel.h 
+41ed  netfilter_ipv6 
+81a4  if_vlan.h 
+81a4  netfilter_ipv6.h 
+  netfilter_ipv6.h        6 
+81a4  if_x25.h 
+81a4  nfc.h 
+  nfc.h       17 
+81a4  rtc.h 
+  rtc.h        9 
+81a4  igmp.h 
+81a4  netlink.h 
+  netlink.h       13 
+81a4  in_route.h 
+  in_route.h        3 
+81a4  netlink_diag.h 
+81a4  inet_diag.h 
+  inet_diag.h        7 
+81a4  netrom.h 
+  netrom.h        3 
+81a4  inotify.h 
+  inotify.h        7 
+81a4  nfs.h 
+  nfs.h       10 
+81a4  scc.h 
+  scc.h       10 
+81a4  input.h 
+  input.h       65 
+81a4  nfs2.h 
+  nfs2.h        4 
+81a4  ioctl.h 
+81a4  nfs3.h 
+  nfs3.h        6 
+81a4  ip6_tunnel.h 
+  ip6_tunnel.h        5 
+81a4  nfs4.h 
+  nfs4.h       13 
+81a4  ip_vs.h 
+  ip_vs.h       26 
+81a4  nfs4_mount.h 
+  nfs4_mount.h        5 
+81a4  ipmi.h 
+  ipmi.h       33 
+81a4  net_tstamp.h 
+81a4  sem.h 
+81a4  ipmi_msgdefs.h 
+  ipmi_msgdefs.h       10 
+81a4  nfs_fs.h 
+81a4  ipsec.h 
+  ipsec.h        3 
+81a4  nfs_idmap.h 
+  nfs_idmap.h        6 
+81a4  ipv6.h 
+  ipv6.h        8 
+81a4  nfs_mount.h 
+  nfs_mount.h        6 
+81a4  ipv6_route.h 
+  ipv6_route.h        5 
+81a4  nfsacl.h 
+81a4  irda.h 
+  irda.h       16 
+81a4  nubus.h 
+  nubus.h       18 
+81a4  irqnr.h 
+  irqnr.h        2 
+41ed  nfsd 
+81a4  shm.h 
+  shm.h        6 
+81a4  isdn.h 
+81a4  netconf.h 
+81a4  som.h 
+  som.h       12 
+81a4  isdn_divertif.h 
+  isdn_divertif.h        4 
+81a4  nl80211.h 
+  nl80211.h      377 
+81a4  isdn_ppp.h 
+  isdn_ppp.h        5 
+81a4  nvme.h 
+  nvme.h       26 
+81a4  isdnif.h 
+  isdnif.h        6 
+81a4  nvram.h 
+  nvram.h        2 
+81a4  iso_fs.h 
+  iso_fs.h       14 
+81a4  omap3isp.h 
+81a4  ivtv.h 
+81a4  omapfb.h 
+  omapfb.h       13 
+81a4  ivtvfb.h 
+  ivtvfb.h        4 
+81a4  oom.h 
+41ed  spi 
+81a4  ixjuser.h 
+  ixjuser.h       51 
+81a4  packet_diag.h 
+  packet_diag.h        4 
+81a4  jffs2.h 
+  jffs2.h       15 
+81a4  openvswitch.h 
+81a4  joystick.h 
+81a4  parport.h 
+81a4  kdev_t.h 
+  kdev_t.h        2 
+81a4  netdevice.h 
+81a4  tcp.h 
+81a4  kernel-page-flags.h 
+  kernel-page-flags.h        3 
+81a4  param.h 
+81a4  kernel.h 
+  kernel.h        2 
+81a4  patchkey.h 
+81a4  kernelcapi.h 
+81a4  pci.h 
+81a4  tty.h 
+81a4  kexec.h 
+81a4  pci_regs.h 
+81a4  keyboard.h 
+81a4  perf_event.h 
+81a4  keyctl.h 
+81a4  pg.h 
+  pg.h        6 
+81a4  udp.h 
+  udp.h        4 
+81a4  kvm_para.h 
+  kvm_para.h        3 
+81a4  personality.h 
+81a4  l2tp.h 
+81a4  pfkeyv2.h 
+81a4  limits.h 
+  limits.h        3 
+81a4  phantom.h 
+  phantom.h        5 
+81a4  loop.h 
+  loop.h        6 
+81a4  phonet.h 
+  phonet.h       11 
+81a4  magic.h 
+  magic.h        7 
+81a4  pkt_cls.h 
+  pkt_cls.h       20 
+81a4  major.h 
+  major.h       10 
+41ed  netfilter_arp 
+81a4  uio.h 
+81a4  map_to_7segment.h 
+81a4  pkt_sched.h 
+  pkt_sched.h       37 
+81a4  matroxfb.h 
+81a4  pktcdvd.h 
+81a4  mdio.h 
+  mdio.h       29 
+81a4  pmu.h 
+81a4  un.h 
+81a4  media.h 
+  media.h        9 
+81a4  poll.h 
+81a4  mempolicy.h 
+  mempolicy.h        6 
+81a4  ppp-comp.h 
+81a4  meye.h 
+  meye.h        6 
+81a4  posix_types.h 
+  posix_types.h        4 
+81a4  minix_fs.h 
+81a4  ppdev.h 
+  ppdev.h        8 
+81a4  mman.h 
+  mman.h        2 
+81a4  ppp-ioctl.h 
+81a4  mmtimer.h 
+81a4  ppp_defs.h 
+  ppp_defs.h       11 
+81a4  mqueue.h 
+81a4  pps.h 
+41ed  usb 
+81a4  mroute.h 
+81a4  prctl.h 
+81a4  mroute6.h 
+81a4  ptp_clock.h 
+  ptp_clock.h       10 
+81a4  msdos_fs.h 
+81a4  ptrace.h 
+81a4  msg.h 
+  msg.h        7 
+81a4  qnx4_fs.h 
+  qnx4_fs.h        6 
+81a4  mtio.h 
+  mtio.h       17 
+81a4  qnxtypes.h 
+  qnxtypes.h        3 
+81a4  n_r3964.h 
+81a4  quota.h 
+  quota.h       12 
+81a4  nbd.h 
+  nbd.h        6 
+81a4  radeonfb.h 
+81a4  ncp.h 
+81a4  raw.h 
+  raw.h        2 
+81a4  vt.h 
+  vt.h        8 
+81a4  ncp_fs.h 
+  ncp_fs.h        8 
+41ed  raid 
+41ed  wimax 
+81a4  ncp_mount.h 
+  ncp_mount.h        6 
+81a4  random.h 
+81a4  ncp_no.h 
+  ncp_no.h        3 
+81a4  rds.h 
+  rds.h       17 
+81a4  x25.h 
+81a4  neighbour.h 
+  neighbour.h       10 
+81a4  reboot.h 
+  reboot.h        4 
+81a4  net.h 
+  net.h        5 
+81a4  netfilter.h 
+  netfilter.h        5 
+81a4  net_dropmon.h 
+41ed  netfilter_bridge 
+81a4  net_namespace.h 
+41ed  netfilter 
+81a4  reiserfs_fs.h 
+81a4  vhost.h 
+  vhost.h       14 
+81a4  reiserfs_xattr.h 
+  reiserfs_xattr.h        2 
+81a4  virtio_rng.h 
+  virtio_rng.h        2 
+81a4  resource.h 
+  resource.h        6 
+81a4  virtio_scsi.h 
+81a4  rfkill.h 
+81a4  virtio_types.h 
+81a4  romfs_fs.h 
+  romfs_fs.h        4 
+81a4  wait.h 
+  wait.h        3 
+81a4  rose.h 
+  rose.h        6 
+81a4  wanrouter.h 
+  wanrouter.h        2 
+81a4  route.h 
+  route.h        6 
+81a4  watchdog.h 
+  watchdog.h        6 
+81a4  rtnetlink.h 
+  rtnetlink.h       33 
+81a4  wimax.h 
+81a4  sched.h 
+81a4  vfio.h 
+  vfio.h       41 
+81a4  screen_info.h 
+81a4  wireless.h 
+81a4  sctp.h 
+81a4  xattr.h 
+  xattr.h        7 
+81a4  sdla.h 
+  sdla.h        7 
+81a4  xfrm.h 
+  xfrm.h       23 
+81a4  seccomp.h 
+  seccomp.h        5 
+81a4  securebits.h 
+  securebits.h        6 
+81a4  videodev2.h 
+  videodev2.h      136 
+81a4  selinux_netlink.h 
+  selinux_netlink.h        4 
+81a4  serial.h 
+  serial.h        8 
+81a4  virtio_9p.h 
+  virtio_9p.h        5 
+81a4  serial_core.h 
+  serial_core.h       12 
+81a4  serial_reg.h 
+  serial_reg.h       33 
+81a4  serio.h 
+  serio.h        5 
+81a4  signal.h 
+  signal.h        2 
+81a4  signalfd.h 
+81a4  snmp.h 
+81a4  sock_diag.h 
+  sock_diag.h        2 
+81a4  socket.h 
+81a4  sockios.h 
+81a4  sonet.h 
+  sonet.h        6 
+81a4  sonypi.h 
+81a4  sound.h 
+81a4  soundcard.h 
+81a4  stat.h 
+81a4  stddef.h 
+  stddef.h        2 
+81a4  string.h 
+  string.h        2 
+41ed  sunrpc 
+81a4  virtio_balloon.h 
+  virtio_balloon.h        9 
+81a4  suspend_ioctls.h 
+  suspend_ioctls.h        4 
+81a4  swab.h 
+  swab.h       14 
+81a4  synclink.h 
+81a4  sysctl.h 
+  sysctl.h       52 
+81a4  sysinfo.h 
+81a4  taskstats.h 
+  taskstats.h       15 
+41ed  tc_act 
+41ed  tc_ematch 
+
+---> Processing directory /usr/include/linux/tc_ematch 
+41ed  . 
+41ed  .. 
+81a4  tc_em_cmp.h 
+81a4  tc_em_meta.h 
+  tc_em_meta.h        6 
+81a4  tc_em_nbyte.h 
+  tc_em_nbyte.h        2 
+81a4  tc_em_text.h 
+  tc_em_text.h        2 
+81a4  virtio_blk.h 
+  virtio_blk.h       12 
+81a4  tcp_metrics.h 
+  tcp_metrics.h        4 
+81a4  telephony.h 
+  telephony.h       19 
+81a4  termios.h 
+81a4  time.h 
+  time.h        5 
+81a4  times.h 
+  times.h        2 
+81a4  timex.h 
+  timex.h       14 
+81a4  tiocl.h 
+  tiocl.h        5 
+81a4  tipc.h 
+81a4  virtio_config.h 
+81a4  tipc_config.h 
+81a4  toshiba.h 
+81a4  tty_flags.h 
+81a4  types.h 
+81a4  udf_fs_i.h 
+81a4  uhid.h 
+  uhid.h        6 
+81a4  uinput.h 
+81a4  ultrasound.h 
+  ultrasound.h       10 
+81a4  unistd.h 
+  unistd.h        2 
+81a4  unix_diag.h 
+  unix_diag.h        4 
+81a4  virtio_console.h 
+81a4  usbdevice_fs.h 
+81a4  virtio_ids.h 
+  virtio_ids.h        6 
+81a4  userfaultfd.h 
+  userfaultfd.h       10 
+81a4  utime.h 
+  utime.h        2 
+81a4  utsname.h 
+  utsname.h        3 
+81a4  uuid.h 
+  uuid.h        5 
+81a4  uvcvideo.h 
+81a4  virtio_input.h 
+81a4  v4l2-common.h 
+  v4l2-common.h        6 
+81a4  virtio_net.h 
+  virtio_net.h       20 
+81a4  v4l2-controls.h 
+  v4l2-controls.h       76 
+81a4  v4l2-dv-timings.h 
+  v4l2-dv-timings.h       53 
+81a4  virtio_pci.h 
+81a4  v4l2-mediabus.h 
+81a4  virtio_ring.h 
+  virtio_ring.h       14 
+81a4  v4l2-subdev.h 
+81a4  version.h 
+  version.h        2 
+81a4  veth.h 
+41ed  misc 
+41ed  mtd 
+
+---> Processing directory /usr/include/mtd 
+41ed  . 
+41ed  .. 
+81a4  inftl-user.h 
+  inftl-user.h        5 
+81a4  mtd-abi.h 
+  mtd-abi.h       20 
+81a4  mtd-user.h 
+81a4  nftl-user.h 
+  nftl-user.h        6 
+81a4  ubi-user.h 
+  ubi-user.h       34 
+41ed  rdma 
+41ed  scsi 
+41ed  sound 
+41ed  uapi 
+41ed  video 
+41ed  xen 
+81a4  printf.h 
+81a4  _G_config.h 
+81a4  pthread.h 
+  pthread.h       81 
+81a4  a.out.h 
+81a4  pty.h 
+  pty.h        5 
+41ed  sepol 
+81a4  aio.h 
+81a4  pwd.h 
+41ed  kadm5 
+81a4  aliases.h 
+81a4  re_comp.h 
+  re_comp.h        3 
+81a4  alloca.h 
+81a4  zconf.h 
+  zconf.h       31 
+81a4  ar.h 
+81a4  regex.h 
+81a4  argp.h 
+  argp.h       53 
+81a4  regexp.h 
+81a4  argz.h 
+41ed  arpa 
+81a4  resolv.h 
+81a4  assert.h 
+  assert.h        9 
+41ed  bits 
+41ed  rpcsvc 
+81a4  byteswap.h 
+  byteswap.h        4 
+81a4  search.h 
+  search.h       12 
+81a4  complex.h 
+81a4  sched.h 
+81a4  cpio.h 
+81a4  semaphore.h 
+81a4  crypt.h 
+81a4  setjmp.h 
+81a4  ctype.h 
+  ctype.h       25 
+81a4  sgtty.h 
+  sgtty.h        4 
+81a4  dirent.h 
+  dirent.h       26 
+81a4  shadow.h 
+  shadow.h       12 
+81a4  dlfcn.h 
+  dlfcn.h       15 
+81a4  signal.h 
+  signal.h       28 
+81a4  elf.h 
+81a4  spawn.h 
+  spawn.h       15 
+81a4  endian.h 
+81a4  stab.h 
+81a4  envz.h 
+  envz.h        7 
+81a4  stdio.h 
+  stdio.h       63 
+81a4  err.h 
+81a4  stdc-predef.h 
+  stdc-predef.h        5 
+81a4  errno.h 
+  errno.h        6 
+81a4  stdint.h 
+  stdint.h       18 
+81a4  error.h 
+  error.h        6 
+81a4  stdio_ext.h 
+  stdio_ext.h        7 
+81a4  execinfo.h 
+81a4  stdlib.h 
+  stdlib.h       68 
+81a4  fcntl.h 
+  fcntl.h       21 
+81a4  string.h 
+  string.h       45 
+81a4  features.h 
+81a4  strings.h 
+81a4  fenv.h 
+  fenv.h       10 
+81a4  syscall.h 
+81a4  fmtmsg.h 
+  fmtmsg.h        8 
+81a4  sysexits.h 
+  sysexits.h       12 
+81a4  fnmatch.h 
+  fnmatch.h        6 
+81a4  locale.h 
+  locale.h       17 
+81a4  kdb.h 
+81a4  fpu_control.h 
+81a4  syslog.h 
+81a4  fstab.h 
+81a4  tar.h 
+  tar.h        9 
+41ed  krb5 
+81a4  fts.h 
+  fts.h       12 
+81a4  termio.h 
+  termio.h        2 
+81a4  ftw.h 
+81a4  termios.h 
+81a4  gconv.h 
+81a4  tgmath.h 
+  tgmath.h       38 
+81a4  getopt.h 
+  getopt.h       15 
+81a4  thread_db.h 
+81a4  glob.h 
+  glob.h       15 
+41ed  gnu 
+81a4  malloc.h 
+81a4  eti.h 
+81a4  gnu-versions.h 
+81a4  time.h 
+81a4  grp.h 
+81a4  ttyent.h 
+  ttyent.h        6 
+81a4  gshadow.h 
+81a4  uchar.h 
+81a4  iconv.h 
+81a4  ucontext.h 
+  ucontext.h        5 
+81a4  ieee754.h 
+  ieee754.h       11 
+81a4  ulimit.h 
+  ulimit.h        5 
+81a4  ifaddrs.h 
+  ifaddrs.h        7 
+81a4  unistd.h 
+81a4  inttypes.h 
+81a4  ustat.h 
+  ustat.h        2 
+81a4  langinfo.h 
+81a4  utime.h 
+81a4  lastlog.h 
+  lastlog.h        2 
+81a4  utmp.h 
+  utmp.h        8 
+81a4  libgen.h 
+  libgen.h        4 
+81a4  utmpx.h 
+  utmpx.h       10 
+81a4  libintl.h 
+  libintl.h       10 
+81a4  values.h 
+  values.h        5 
+81a4  libio.h 
+  libio.h       35 
+81a4  wait.h 
+  wait.h        2 
+81a4  limits.h 
+  limits.h       10 
+81a4  wchar.h 
+81a4  link.h 
+81a4  mqueue.h 
+41ed  net 
+41ed  netash 
+41ed  netatalk 
+41ed  netax25 
+81a4  wctype.h 
+  wctype.h       23 
+81a4  netdb.h 
+  netdb.h       56 
+41ed  neteconet 
+41ed  netinet 
+41ed  netipx 
+41ed  netiucv 
+41ed  netpacket 
+41ed  netrom 
+41ed  netrose 
+41ed  nfs 
+81a4  wordexp.h 
+81a4  nl_types.h 
+  nl_types.h        5 
+81a4  xlocale.h 
+  xlocale.h        5 
+81a4  nss.h 
+  nss.h        5 
+81a4  verto-module.h 
+  verto-module.h       14 
+81a4  obstack.h 
+41ed  et 
+81a4  tic.h 
+  tic.h       26 
+81a4  paths.h 
+81a4  com_err.h 
+81a4  poll.h 
+  poll.h        2 
+41ed  protocols 
+41ed  rpc 
+81a4  zlib.h 
+81a4  pcre.h 
+81a4  pcre_scanner.h 
+81a4  pcre_stringpiece.h 
+81a4  pcrecpp.h 
+  pcrecpp.h       53 
+81a4  pcrecpparg.h 
+  pcrecpparg.h       15 
+81a4  pcreposix.h 
+  pcreposix.h       12 
+41ed  selinux 
+81a4  keyutils.h 
+  keyutils.h       16 
+41ed  gssapi 
+81a4  gssapi.h 
+  gssapi.h        2 
+41ed  gssrpc 
+81a4  krad.h 
+  krad.h       19 
+81a4  krb5.h 
+81a4  profile.h 
+  profile.h       25 
+41ed  openssl 
+81a4  curses.h 
+81a4  cursesapp.h 
+81a4  cursesf.h 
+81a4  cursesm.h 
+  cursesm.h       40 
+81a4  cursesp.h 
+  cursesp.h       18 
+81a4  cursesw.h 
+  cursesw.h       98 
+81a4  cursslk.h 
+  cursslk.h       16 
+81a4  etip.h 
+  etip.h       20 
+81a4  form.h 
+81a4  menu.h 
+81a4  nc_tparm.h 
+41ed  ncurses 
+a1ff  ncurses.h 
+81a4  ncurses_dll.h 
+  ncurses_dll.h        9 
+41ed  ncursesw 
+81a4  panel.h 
+81a4  term.h 
+  term.h       79 
+81a4  term_entry.h 
+81a4  termcap.h 
+  termcap.h        8 
+81a4  unctrl.h 
+  unctrl.h        8 
+41ed  vmGuestLib 
 41ed  libexec 
 41ed  local 
 41ed  src 
-
----> Processing directory /usr/src 
-41ed  . 
-41ed  .. 
-41ed  debug 
-41ed  kernels 
-a1ff  linux 
-41ed  .tmp_versions 
-81a4  Makefile 
-  Makefile        2 
-81a4  .mymod.o.cmd 
-81a4  modules.order 
-81a4  Module.symvers 
-81a4  .mymod.mod.o.cmd 
-81a4  .mymod.ko.cmd 
 a1ff  tmp 
-81a4  bzImage 
