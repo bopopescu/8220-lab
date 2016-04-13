@@ -9,7 +9,7 @@ int main()
 	while(1)
 	{
 		sum_print;		
-		sleep(3);
+		sleep(1);
 	}
 	return 0;
 }
