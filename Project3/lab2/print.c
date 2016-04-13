@@ -5,7 +5,6 @@
 
 int main()
 {
-	sum_init;
 	sum_print;
 	
 	return 0;
